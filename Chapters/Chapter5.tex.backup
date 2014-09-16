@@ -242,14 +242,15 @@ At step 2 shown in Figure \ref{fig:Choose win7 ISO file}, we need to indicate th
 	\label{fig:Choose win7 ISO file}
 \end{figure}
 
-Then we create a virtual disk of 20G for our guest in step 3.
+Then we create a virtual disk of 20G for our guest in step 3 (Figure \ref{fig:Step 3-Create a virtual disk of 20G}).
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[scale=0.4]{Figures/Figure14.png}
 	\caption[Step 3-Create a virtual disk of 20G]{Step 3-Create a virtual disk of 20G}
 	\label{fig:Step 3-Create a virtual disk of 20G}
 \end{figure}
-In the next step, our reserved virtual disk is used as hard disk for win7\_64bit guest.
+
+In the next step (Figure \ref{fig:Step 4-Indicate virtual disk location for guest installation}), our reserved virtual disk is used as hard disk for win7\_64bit guest.
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[scale=0.4]{Figures/Figure15.png}
@@ -273,10 +274,10 @@ When the installation process is finished, we check guest’s IP configuration a
 	\label{fig:guest machine ping host machine}
 \end{figure}
 
-Then verify that the guest machine is launched as a seperate process under Ubuntu by qemu in host machine. The result is shown in figure \ref{fig:Guest as a qemu process in host machine}
+Then verify that the guest machine is launched as a seperate process under Ubuntu by qemu in host machine. The result is shown in Figure \ref{fig:Guest as a qemu process in host machine}
 \begin{figure}[htbp]
 	\centering
-		\includegraphics[scale=0.4]{Figures/Figure18.png}
+		\includegraphics[width=14cm, height= 4cm ]{Figures/Figure18.png}
 	\caption[Guest as a qemu process in host machine]{Guest as a qemu process in host machine}
 	\label{fig:Guest as a qemu process in host machine}
 \end{figure}

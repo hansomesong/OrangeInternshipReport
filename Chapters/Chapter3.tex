@@ -6,11 +6,20 @@
 
 \lhead{Chapter 3. \emph{INTERNSHIP’S OBJECTIVE}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
 
-As mentioned before, in terms of bridging semantic gap for VMI, the most popular method is out-of-band delivery pattern. In this field, there exist plenty of VMI applications for various purposes. Although this method could help to effectively mitigate the semantic gap, it poses other problems such as portability, non-robust against circumstances technologies, etc. For example, if we use LibVMI to help parse guest Linux kernel data structure, the system symbol file is required firstly to be transferred to host machine. In case of kernel’s update in guest, this file transfer needs to be executed again. In this context, we want to explore the potential of derivative pattern, which relies on guest hardware architecture to extract useful information. Pfoh has declared in his work \citep{Reference7} that:
+As mentioned before, in terms of bridging semantic gap for VMI, the most popular method is out-of-band delivery pattern. In this field, there 
+exist plenty of VMI applications for various purposes. Although this method could help to effectively mitigate the semantic gap, it poses other 
+problems such as portability, non-robust against circumstances technologies, etc. For example, if we use LibVMI to help parse guest Linux kernel
+data structure, the system symbol file is required firstly to be transferred to host machine. In case of kernel’s update in guest, this file 
+transfer needs to be executed again. In this context, we want to explore the potential of derivative pattern, which relies on guest hardware 
+architecture to extract useful information. Pfoh has declared in his work \cite{Reference7} that:
 
-\textcolor{blue}{“These methods allow one to enumerate the running processes, monitor system calls, or track network connections on a per-process basis in a completely guest OS agnostic manner.” }
+\textcolor{blue}{
+  “These methods allow one to enumerate the running processes, monitor system calls, or track network connections 
+  on a per-process basis in a completely guest OS agnostic manner.” 
+}
 
-His declaration is rather interesting and attractive even though Pfoh has not given more explanation to argue his idea. Thus, the main objective of this internship is to prove this idea and develop a prototype implementation. The prototype should present the following features:
+His declaration is rather interesting and attractive even though Pfoh has not given more explanation to argue his idea. Thus, the main objective
+of this internship is to prove this idea and develop a prototype implementation. The prototype should present the following features:
 
 \begin{itemize}
     \item Capable of tracking network connection on a per-process

@@ -19,10 +19,9 @@ development platform.
 As was mentioned above, the first step to achieve our final objective is to figure out how derivative pattern functions by
 installing and manipulating the only known open-source derivative pattern VMI application: Nitro. Thus, it’s logical to
 choose those operating systems which support Nitro. According to Pfoh, Nitro has been tested on Linux kernel 3.11 and
-3.13. Hence, Ubuntu14.04 with kernel version 3.13 is our final choice.
-KVM virtualization platform will be built in a HP Z820 workstation which initially has only Windows 7 installed. The
-first step is to install a Windows 7 and Ubuntu 14.04 dual-boot system. This manipulation is not difficult but kind of
-tedious. In fact, we follow this tutorial http://askubuntu.com/questions/343268/how-to-use-manual-partitioning-during-
+3.13. Hence, Ubuntu14.04 with kernel version 3.13 is our final choice. KVM virtualization platform will be built in a HP Z820 workstation 
+which initially has only Windows 7 installed. The first step is to install a Windows 7 and Ubuntu 14.04 dual-boot system. This manipulation
+is not difficult but kind of tedious. In fact, we follow this tutorial http://askubuntu.com/questions/343268/how-to-use-manual-partitioning-during-
 installation to accomplish this step.
 
 %-----------------------------------
@@ -34,7 +33,7 @@ installation to accomplish this step.
 This workstation has been allocated a static network configuration and it uses always port 8 in each office. To achieve
 this, we need to edit configuration file /etc/network/interfaces to set 10.193.192.37 as ipv4 address, 255.255.255.0 as
 10network mask, 10.193.192.1 as default gateway and 10.193.197.10 as DNS name server. The final network configuration in 
-Ubuntu14.04 is shown as following.
+Ubuntu14.04 is shown as in Figure \ref{fig:HP Workstation static network configuration}.
 
 \begin{figure}[htbp]
 	\centering
@@ -44,13 +43,14 @@ Ubuntu14.04 is shown as following.
 \end{figure}
 
 Besides, never forget to set a parameter named “managed” to “true”, defined in configuration file /etc/NetworkManager/NetworkManager.conf. 
-Otherwise the network will be always in disable state. The security politics of Orange Labs require each PC to configure proxy server if the former needs Internet connectivity.
-In fact, under Linux system, it is possible to set proxy configuration on different level. The first solution is to declare http proxy server on command-line level. 
-For example, if we want to update APT source list, we could issue a command in a terminal:
-sudo http://proxy.rd.francetelecom.fr:8080 apt-get update
-This proxy configuration is uniquely valid for the current command and every command we tape should contain an option for proxy server, which is not effective and tedious.
-Proxy server configuration could also be set on application level. For example, if we want to user web browser such as Firefox, 
-we need to set proxy address for Firefox just like in the following picture.
+Otherwise the network will be always in disable state. The security politics of Orange Labs require each PC to configure proxy server if the 
+former needs Internet connectivity. In fact, under Linux system, it is possible to set proxy configuration on different level. The first 
+solution is to declare http proxy server on command-line level. For example, if we want to update APT source list, we could issue a command in 
+a terminal:
+\shellcmd{sudo http://proxy.rd.francetelecom.fr:8080 apt-get update}
+This proxy configuration is uniquely valid for the current command and every command we tape should contain an option for proxy server, which is
+not effective and tedious. Proxy server configuration could also be set on application level. For example, if we want to user web browser such 
+as Firefox, we need to set proxy address for Firefox just like in the following picture.
 
 \begin{figure}[htbp]
 	\centering
@@ -72,7 +72,7 @@ The last solution is setting bash configuration files like /etc/profile, /etc/ba
 After installation of Ubuntu14.04 in our workstation, it’s time to install required Ubuntu packages to turn Ubuntu into a hypervisor. Prior to the real installation, it is necessary to make a presentation for KVM.
 
 KVM (Kernel-based Virtual Machine) is a virtualization infrastructure for the Linux kernel that turns it into a hypervisor, which was merged into the Linux kernel mainline in February 2007. KVM requires a processor with hardware virtualization extension. KVM has also been ported to FreeBSD and Illumos in the form of loadable kernel modules. 
-Compared to other virtualization alternatives available in Linux, KVM presents the following advantages \citep{Reference20}:
+Compared to other virtualization alternatives available in Linux, KVM presents the following advantages \cite{Reference20}:
 
     \begin{itemize}
 	\item Can interact directly with the Kernel
@@ -80,24 +80,23 @@ Compared to other virtualization alternatives available in Linux, KVM presents t
 	\item One of the Linux software developed aggressively.
 	\item Almost becoming competitor to VMware by implementing technologies such as v2v, p2v, and many open source tools to manage VM
 	\item Number of open source cloud automation softwares use KVM as default hypervisor 
-
     \end{itemize}
 
 %----------------------------------------------------------------------------------------
 %	SECTION 4
 %----------------------------------------------------------------------------------------
 
-\section{KVM’s Operating Principle}
+\section{KVM’s Operating Principle \cite{Reference20}}
 
-Once KVM is installed on a Linux box, a hardware file /dev/kvm is created which will act as interpreter between actual hardware and hypervisor manager (for example, virt-manager). 
-Whenever a request for hardware changes or additions comes from hypervisor manager, KVM software starts allocating those resources virtually by interacting with real hardware. 
-Suppose we want to change RAM on a virtual machine, this is communicated by the hypervisor manager to KVM for allocating the resource. 
-Then KVM interacts with hardware and reserves that RAM from real RAM for that particular VM. This happens for the other resources as well.
+Once KVM is installed on a Linux box, a hardware file /dev/kvm is created which will act as interpreter between actual hardware and hypervisor 
+manager (for example, virt-manager). Whenever a request for hardware changes or additions comes from hypervisor manager, KVM software starts 
+allocating those resources virtually by interacting with real hardware. Suppose we want to change RAM on a virtual machine, this is communicated
+by the hypervisor manager to KVM for allocating the resource. Then KVM interacts with hardware and reserves that RAM from real RAM for that particular VM. This happens for the other resources as well.
 
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[scale = 0.6]{Figures/Figure7.png}
-	\caption[KVM Virtualization Architecture in Linux]{KVM Virtualization Architecture in Linux}
+	\caption[KVM Virtualization Architecture in Linux]{KVM Virtualization Architecture in Linux \cite{Reference20}}
 	\label{fig:KVM Virtualization Architecture in Linux}
 \end{figure}
 
@@ -132,18 +131,17 @@ It is not a recommended way of managing virtual machines.
 More information is available with link: https://help.ubuntu.com/community/KVM/Directly
 
 \subsection{Libvirt}
-Libvirt is not a VM management tool. 
-Instead, it is a toolkit to interact with the virtualization capabilities of recent versions of Linux \citep{Reference23}. 
-It is an open-source project and provides a set of long term stable C API. 
-These C APIs all APIs are designed to do virtualization management, such as: 
-provision, create, modify, monitor, control, migrate and stop the guests - within the limits of the support of the hypervisor for those operations. 
-Hence, libvirt is intended to be a building block for higher level management tools and for applications focusing on virtualization of a single physical host. 
-The following picture shows the relationship between hypervisor, libvirt and virtualization management tool.
+Libvirt is not a VM management tool. Instead, it is a toolkit to interact with the virtualization capabilities of recent versions of Linux 
+\cite{Reference23}. It is an open-source project and provides a set of long term stable C API. These C APIs all APIs are designed to do 
+virtualization management, such as: provision, create, modify, monitor, control, migrate and stop the guests - within the limits of the support
+of the hypervisor for those operations. Hence, libvirt is intended to be a building block for higher level management tools and for applications
+focusing on virtualization of a single physical host. The Figure \ref{fig:Relationship between virsh, virt-manager and libvirt} shows the 
+relationship between hypervisor, libvirt and virtualization management tool.
 
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[scale = 1.2]{Figures/Figure8.png}
-	\caption[Relationship between virsh, virt-manager and libvirt]{Relationship between virsh, virt-manager and libvirt}
+	\caption[Relationship between virsh, virt-manager and libvirt]{Relationship between virsh, virt-manager and libvirt \cite{Reference25}}
 	\label{fig:Relationship between virsh, virt-manager and libvirt}
 \end{figure}
 
@@ -160,7 +158,7 @@ Hence, certain applications (like ping) won't work.
 \begin{figure}[htb]
 	\centering
 		\includegraphics[scale=0.5]{Figures/Figure9.png}
-	\caption[User networking mode topology]{User networking mode topology}
+	\caption[User networking mode topology]{User networking mode topology \cite{Reference24}}
 	\label{fig:User networking mode topology}
 \end{figure}
 
@@ -193,7 +191,7 @@ NAT networking mode is actually the default networking mode for virtual machines
 \begin{figure}[htb]
 	\centering
 		\includegraphics[scale=0.5]{Figures/Figure10.png}
-	\caption[Virtual network on NAT mode]{Virtual network on NAT mode}
+	\caption[Virtual network on NAT mode]{Virtual network on NAT mode \cite{Reference19}}
 	\label{fig:Virtual network on NAT mode}
 \end{figure}
 

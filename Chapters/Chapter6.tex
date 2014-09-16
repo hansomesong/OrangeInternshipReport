@@ -65,7 +65,7 @@ For more information about windows 64 bits system call table, please refer to th
 As far as I know, Nitro is actually the first and only VMI application in derivative manner under KVM virtualization platform. 
 Though VMI in derivative mode is perfectly against circumstance technique, the amount of information obtained is rather limited, 
 due to the fact that derivation method principally just concerns and observes hardware-related running state (such as CR3 register, etc.)
-[17]. Nitro, as a typical implementation under the guide of derivation method, is no different. Currently, Nitro is just able to access vCPU 
+\cite{Reference17}. Nitro, as a typical implementation under the guide of derivation method, is no different. Currently, Nitro is just able to access vCPU 
 registers and trap system calls of type “syscall/sysret” (In fact, system call is possible to be invoked in other manners such as assembly instruction int 0x80.), 
 even though Pfoh promises to enrich Nitro’s functionality list in his spare time.
 

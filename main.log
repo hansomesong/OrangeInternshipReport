@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.1)  16 SEP 2014 19:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.9.15)  17 SEP 2014 00:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -866,156 +866,150 @@ Chapter 2.
 ------------------------------------------------------------------------------
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 15.
+(hyperref)                removing `\begingroup' on input line 16.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 15.
+(hyperref)                removing `\<let>-command' on input line 16.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 15.
+(hyperref)                removing `\NAT@ctype' on input line 16.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 15.
+(hyperref)                removing `\z@' on input line 16.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 15.
+(hyperref)                removing `\let' on input line 16.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 15.
+(hyperref)                removing `\let' on input line 16.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 15.
+(hyperref)                removing `\new@ifnextchar' on input line 16.
 
 [2
 
-] [3] [4] [5] [6] <Figures/Figure1.pdf, id=605, 454.69875pt x 170.6375pt>
+] [3] [4] [5] [6] <Figures/Figure1.pdf, id=610, 454.69875pt x 170.6375pt>
 File: Figures/Figure1.pdf Graphic file (type pdf)
 
 <use Figures/Figure1.pdf>
-Package pdftex.def Info: Figures/Figure1.pdf used on input line 72.
-(pdftex.def)             Requested size: 454.69763pt x 170.63707pt.
-
-Overfull \hbox (37.22456pt too wide) in paragraph at lines 72--74
- [][] 
- []
-
-[7 <./Figures/Figure1.pdf>]
-<Figures/Figure2.pdf, id=624, 455.7025pt x 198.7425pt>
+Package pdftex.def Info: Figures/Figure1.pdf used on input line 151.
+(pdftex.def)             Requested size: 272.82135pt x 102.38327pt.
+ [7 <./Figures/Figure1.pdf>]
+<Figures/Figure2.pdf, id=630, 455.7025pt x 198.7425pt>
 File: Figures/Figure2.pdf Graphic file (type pdf)
 
 <use Figures/Figure2.pdf>
-Package pdftex.def Info: Figures/Figure2.pdf used on input line 86.
+Package pdftex.def Info: Figures/Figure2.pdf used on input line 181.
 (pdftex.def)             Requested size: 455.70137pt x 198.742pt.
 
-Overfull \hbox (38.2283pt too wide) in paragraph at lines 86--88
+Overfull \hbox (38.2283pt too wide) in paragraph at lines 181--182
  [][] 
  []
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 194.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 194.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 194.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 194.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 194.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 194.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 194.
+
 [8 <./Figures/Figure2.pdf>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 99.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 99.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 99.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 99.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 99.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 99.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 99.
-
-
-Overfull \hbox (47.1928pt too wide) in paragraph at lines 103--104
+Overfull \hbox (47.1928pt too wide) in paragraph at lines 201--204
 \OT1/cmr/m/n/10.95 cess. Please re-fer to the fol-low-ing link for more in-for-
 ma-tion: https://code.google.com/p/vmitools/. 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 105.
+(hyperref)                removing `\begingroup' on input line 205.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 105.
+(hyperref)                removing `\<let>-command' on input line 205.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 105.
+(hyperref)                removing `\NAT@ctype' on input line 205.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 105.
+(hyperref)                removing `\z@' on input line 205.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 105.
+(hyperref)                removing `\let' on input line 205.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 105.
+(hyperref)                removing `\let' on input line 205.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 105.
+(hyperref)                removing `\new@ifnextchar' on input line 205.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 109.
+(hyperref)                removing `\begingroup' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 109.
+(hyperref)                removing `\<let>-command' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 109.
+(hyperref)                removing `\NAT@ctype' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\NAT@ctype' on input line 109.
+(hyperref)                removing `\z@' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 109.
+(hyperref)                removing `\let' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\let' on input line 109.
+(hyperref)                removing `\let' on input line 212.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 109.
+(hyperref)                removing `\new@ifnextchar' on input line 212.
 
-<Figures/Figure3.pdf, id=648, 433.62pt x 147.55125pt>
+<Figures/Figure3.pdf, id=653, 433.62pt x 147.55125pt>
 File: Figures/Figure3.pdf Graphic file (type pdf)
 
 <use Figures/Figure3.pdf>
-Package pdftex.def Info: Figures/Figure3.pdf used on input line 115.
+Package pdftex.def Info: Figures/Figure3.pdf used on input line 221.
 (pdftex.def)             Requested size: 433.61894pt x 147.55087pt.
 
-Overfull \hbox (16.14587pt too wide) in paragraph at lines 115--117
+Overfull \hbox (16.14587pt too wide) in paragraph at lines 221--223
  [][] 
  []
 
@@ -1024,12 +1018,12 @@ Chapter 3.
 ------------------------------------------------------------------------------
  3 INTERNSHIP\IeC {\textquoteright }S OBJECTIVE
 ------------------------------------------------------------------------------
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 16.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 25.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 25.
  [11
 
 ])
@@ -1068,32 +1062,31 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ------------------------------------------------------------------------------
 [13
 
-] <Figures/Figure4.png, id=685, 465.23813pt x 167.87718pt>
+] <Figures/Figure4.png, id=693, 465.23813pt x 167.87718pt>
 File: Figures/Figure4.png Graphic file (type png)
 
 <use Figures/Figure4.png>
-Package pdftex.def Info: Figures/Figure4.png used on input line 35.
+Package pdftex.def Info: Figures/Figure4.png used on input line 38.
 (pdftex.def)             Requested size: 372.191pt x 134.30193pt.
- [14 <./Figures/Figure4.png>])
-(./Chapters/Chapter5.tex [15]
+) (./Chapters/Chapter5.tex [14 <./Figures/Figure4.png>]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 ESTABLISHMENT OF EXPERIMENTATION PLATFORM
 ------------------------------------------------------------------------------
-[16
+[15
 
-] <Figures/Figure5.png, id=699, 530.73282pt x 255.95625pt>
+] <Figures/Figure5.png, id=703, 530.73282pt x 255.95625pt>
 File: Figures/Figure5.png Graphic file (type png)
 
 <use Figures/Figure5.png>
-Package pdftex.def Info: Figures/Figure5.png used on input line 41.
+Package pdftex.def Info: Figures/Figure5.png used on input line 40.
 (pdftex.def)             Requested size: 424.58682pt x 204.76526pt.
 
-Overfull \hbox (7.11375pt too wide) in paragraph at lines 41--42
+Overfull \hbox (7.11375pt too wide) in paragraph at lines 40--41
  [][] 
  []
 
-<Figures/Figure6.png, id=700, 503.63156pt x 517.18219pt>
+<Figures/Figure6.png, id=704, 503.63156pt x 517.18219pt>
 File: Figures/Figure6.png Graphic file (type png)
 
 <use Figures/Figure6.png>
@@ -1105,134 +1098,162 @@ Overfull \hbox (5.31912pt too wide) in paragraph at lines 62--65
 Then we could is-sue com-mand
  []
 
-[17 <./Figures/Figure5.png>] [18 <./Figures/Figure6.png>]
-<Figures/Figure7.png, id=711, 455.45157pt x 281.55188pt>
+[16 <./Figures/Figure5.png>] [17 <./Figures/Figure6.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\NAT@ctype' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\z@' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\let' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\new@ifnextchar' on input line 89.
+
+<Figures/Figure7.png, id=717, 455.45157pt x 281.55188pt>
 File: Figures/Figure7.png Graphic file (type png)
 
 <use Figures/Figure7.png>
-Package pdftex.def Info: Figures/Figure7.png used on input line 99.
+Package pdftex.def Info: Figures/Figure7.png used on input line 98.
 (pdftex.def)             Requested size: 273.27304pt x 168.93242pt.
- [19 <./Figures/Figure7.png>]
-Overfull \hbox (126.42839pt too wide) in paragraph at lines 130--133
+ [18 <./Figures/Figure7.png>]
+Overfull \hbox (126.42839pt too wide) in paragraph at lines 129--132
 \OT1/cmr/m/n/10.95 ing vir-tual ma-chines. More in-for-ma-tion is avail-able wi
 th link: https://help.ubuntu.com/community/KVM/Directly 
  []
 
-[20] <Figures/Figure8.png, id=722, 225.84375pt x 127.22531pt>
+[19] <Figures/Figure8.png, id=731, 225.84375pt x 127.22531pt>
 File: Figures/Figure8.png Graphic file (type png)
 
 <use Figures/Figure8.png>
-Package pdftex.def Info: Figures/Figure8.png used on input line 145.
+Package pdftex.def Info: Figures/Figure8.png used on input line 143.
 (pdftex.def)             Requested size: 271.01112pt x 152.66959pt.
 
-<Figures/Figure9.png, id=725, 717.43031pt x 460.72125pt>
+<Figures/Figure9.png, id=736, 717.43031pt x 460.72125pt>
 File: Figures/Figure9.png Graphic file (type png)
 
 <use Figures/Figure9.png>
-Package pdftex.def Info: Figures/Figure9.png used on input line 162.
+Package pdftex.def Info: Figures/Figure9.png used on input line 160.
 (pdftex.def)             Requested size: 358.71428pt x 230.36006pt.
- [21 <./Figures/Figure8.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 177--187
+ [20 <./Figures/Figure8.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 175--185
 
  []
 
 
-Overfull \hbox (11.17393pt too wide) in paragraph at lines 188--190
+Overfull \hbox (11.17393pt too wide) in paragraph at lines 186--188
 [][]\OT1/cmtt/m/n/9 # qemu-system-x86[]64 -hda /path/to/hda.img -device e1000,n
 etdev=net0,mac=$macaddress-netdev
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
  []
 
-<Figures/Figure10.png, id=732, 513.41812pt x 304.88907pt>
+<Figures/Figure10.png, id=746, 513.41812pt x 304.88907pt>
 File: Figures/Figure10.png Graphic file (type png)
 
 <use Figures/Figure10.png>
-Package pdftex.def Info: Figures/Figure10.png used on input line 195.
+Package pdftex.def Info: Figures/Figure10.png used on input line 193.
 (pdftex.def)             Requested size: 256.70842pt x 152.44415pt.
- [22 <./Figures/Figure9.png>]
-<Figures/Figure11.png, id=739, 542.025pt x 342.5297pt>
+ [21 <./Figures/Figure9.png>]
+<Figures/Figure11.png, id=754, 542.025pt x 342.5297pt>
 File: Figures/Figure11.png Graphic file (type png)
 
 <use Figures/Figure11.png>
-Package pdftex.def Info: Figures/Figure11.png used on input line 211.
+Package pdftex.def Info: Figures/Figure11.png used on input line 209.
 (pdftex.def)             Requested size: 379.4149pt x 239.76915pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--224
+Underfull \hbox (badness 10000) in paragraph at lines 214--222
 
  []
 
-[23 <./Figures/Figure10.png>]
-<Figures/Figure12.png, id=744, 963.6pt x 770.88pt>
+[22 <./Figures/Figure10.png>]
+<Figures/Figure12.png, id=761, 963.6pt x 770.88pt>
 File: Figures/Figure12.png Graphic file (type png)
  <use Figures/Figure12.png>
-Package pdftex.def Info: Figures/Figure12.png used on input line 232.
+Package pdftex.def Info: Figures/Figure12.png used on input line 230.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-<Figures/Figure13.png, id=746, 963.6pt x 770.88pt>
+<Figures/Figure13.png, id=763, 963.6pt x 770.88pt>
 File: Figures/Figure13.png Graphic file (type png)
  <use Figures/Figure13.png>
-Package pdftex.def Info: Figures/Figure13.png used on input line 240.
+Package pdftex.def Info: Figures/Figure13.png used on input line 238.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-[24 <./Figures/Figure11.png>]
-<Figures/Figure14.png, id=752, 963.6pt x 770.88pt>
+[23 <./Figures/Figure11.png>]
+<Figures/Figure14.png, id=769, 963.6pt x 770.88pt>
 File: Figures/Figure14.png Graphic file (type png)
  <use Figures/Figure14.png>
-Package pdftex.def Info: Figures/Figure14.png used on input line 248.
+Package pdftex.def Info: Figures/Figure14.png used on input line 246.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-<Figures/Figure15.png, id=754, 963.6pt x 770.88pt>
+<Figures/Figure15.png, id=771, 963.6pt x 770.88pt>
 File: Figures/Figure15.png Graphic file (type png)
  <use Figures/Figure15.png>
-Package pdftex.def Info: Figures/Figure15.png used on input line 256.
+Package pdftex.def Info: Figures/Figure15.png used on input line 254.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-<Figures/Figure16.png, id=756, 963.6pt x 770.88pt>
+<Figures/Figure16.png, id=773, 963.6pt x 770.88pt>
 File: Figures/Figure16.png Graphic file (type png)
  <use Figures/Figure16.png>
-Package pdftex.def Info: Figures/Figure16.png used on input line 264.
+Package pdftex.def Info: Figures/Figure16.png used on input line 262.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-<Figures/Figure17.png, id=758, 963.6pt x 770.88pt>
+<Figures/Figure17.png, id=775, 963.6pt x 770.88pt>
 File: Figures/Figure17.png Graphic file (type png)
  <use Figures/Figure17.png>
-Package pdftex.def Info: Figures/Figure17.png used on input line 272.
+Package pdftex.def Info: Figures/Figure17.png used on input line 270.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-<Figures/Figure18.png, id=760, 962.84718pt x 249.18094pt>
+<Figures/Figure18.png, id=777, 962.84718pt x 249.18094pt>
 File: Figures/Figure18.png Graphic file (type png)
 
 <use Figures/Figure18.png>
-Package pdftex.def Info: Figures/Figure18.png used on input line 280.
+Package pdftex.def Info: Figures/Figure18.png used on input line 278.
 (pdftex.def)             Requested size: 398.32533pt x 113.81094pt.
-) (./Chapters/Chapter6.tex [25 <./Figures/Figure12.png>] [26 <./Figures/Figure1
-3.png> <./Figures/Figure14.png>] [27 <./Figures/Figure15.png> <./Figures/Figure
-16.png>] [28 <./Figures/Figure17.png> <./Figures/Figure18.png>]
+) (./Chapters/Chapter6.tex [24 <./Figures/Figure12.png>] [25 <./Figures/Figure1
+3.png> <./Figures/Figure14.png>] [26 <./Figures/Figure15.png> <./Figures/Figure
+16.png>] [27 <./Figures/Figure17.png> <./Figures/Figure18.png>]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 Nitro installation and manipulation
 ------------------------------------------------------------------------------
-[29
+[28
 
-] <Figures/Figure19.png, id=783, 963.6pt x 734.745pt>
+] <Figures/Figure19.png, id=800, 963.6pt x 734.745pt>
 File: Figures/Figure19.png Graphic file (type png)
 
 <use Figures/Figure19.png>
 Package pdftex.def Info: Figures/Figure19.png used on input line 47.
 (pdftex.def)             Requested size: 398.328pt x 284.53136pt.
- [30 <./Figures/Figure19.png>] [31])
-(./Chapters/Chapter7.tex [32]
+ [29 <./Figures/Figure19.png>] [30])
+(./Chapters/Chapter7.tex [31]
 Chapter 7.
 ------------------------------------------------------------------------------
  7 LibVMI\&Volatility manipulation
 ------------------------------------------------------------------------------
-[33
+[32
 
-] [34] <Figures/Figure20.png, id=807, 567.62062pt x 188.95593pt>
+] [33] <Figures/Figure20.png, id=830, 567.62062pt x 188.95593pt>
 File: Figures/Figure20.png Graphic file (type png)
 
 <use Figures/Figure20.png>
@@ -1249,7 +1270,7 @@ Overfull \hbox (64.96516pt too wide) in paragraph at lines 76--79
 dywp.blogs.unhas.ac.id/2014/05/installing-
  []
 
-[35 <./Figures/Figure20.png>]
+[34 <./Figures/Figure20.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 86--108
 
  []
@@ -1300,7 +1321,7 @@ Overfull \hbox (12.67885pt too wide) in paragraph at lines 86--108
 //ytliu.info/blog/2014/03/27/kvm-
  []
 
-[36] <Figures/Figure21.png, id=816, 752.8125pt x 417.05812pt>
+[35] <Figures/Figure21.png, id=843, 752.8125pt x 417.05812pt>
 File: Figures/Figure21.png Graphic file (type png)
 
 <use Figures/Figure21.png>
@@ -1394,7 +1415,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--142
 
  []
 
-[37] [38]
+[36] [37]
 Underfull \hbox (badness 10000) in paragraph at lines 180--188
 
  []
@@ -1404,8 +1425,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--188
 
  []
 
-[39 <./Figures/Figure21.png>]
-<Figures/Figure22.png, id=829, 548.0475pt x 210.03468pt>
+[38 <./Figures/Figure21.png>]
+<Figures/Figure22.png, id=857, 548.0475pt x 210.03468pt>
 File: Figures/Figure22.png Graphic file (type png)
 
 <use Figures/Figure22.png>
@@ -1431,76 +1452,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 199--204
 
  []
 
-[40 <./Figures/Figure22.png>]
+[39 <./Figures/Figure22.png>]
 Overfull \hbox (176.16982pt too wide) in paragraph at lines 219--225
 \OT1/cmr/m/n/10.95 doc-u-men-ta-tion is very com-plete and is avail-able here :
  http://code.google.com/p/volatility/wiki/VolatilityIntroduction?tm=6 
  []
 
-[41] <Figures/Figure23.png, id=840, 790.45313pt x 250.68657pt>
+[40] <Figures/Figure23.png, id=869, 790.45313pt x 250.68657pt>
 File: Figures/Figure23.png Graphic file (type png)
 
 <use Figures/Figure23.png>
 Package pdftex.def Info: Figures/Figure23.png used on input line 252.
 (pdftex.def)             Requested size: 398.3374pt x 284.55777pt.
 
-<Figures/Figure24.png, id=841, 331.2375pt x 157.33781pt>
+<Figures/Figure24.png, id=872, 331.2375pt x 157.33781pt>
 File: Figures/Figure24.png Graphic file (type png)
 
 <use Figures/Figure24.png>
 Package pdftex.def Info: Figures/Figure24.png used on input line 262.
 (pdftex.def)             Requested size: 398.35739pt x 284.57147pt.
 
-<Figures/Figure25.png, id=843, 692.5875pt x 347.04657pt>
+<Figures/Figure25.png, id=876, 692.5875pt x 347.04657pt>
 File: Figures/Figure25.png Graphic file (type png)
 
 <use Figures/Figure25.png>
 Package pdftex.def Info: Figures/Figure25.png used on input line 274.
 (pdftex.def)             Requested size: 398.35097pt x 284.53766pt.
- [42] [43 <./Figures/Figure23.png> <./Figures/Figure24.png>] <Figures/Figure26.
-png, id=854, 962.09438pt x 584.93532pt>
+ [41] [42 <./Figures/Figure23.png> <./Figures/Figure24.png>] <Figures/Figure26.
+png, id=889, 962.09438pt x 584.93532pt>
 File: Figures/Figure26.png Graphic file (type png)
 
 <use Figures/Figure26.png>
 Package pdftex.def Info: Figures/Figure26.png used on input line 286.
 (pdftex.def)             Requested size: 398.33687pt x 284.53227pt.
 
-<Figures/Figure27.png, id=856, 962.84718pt x 462.22687pt>
+<Figures/Figure27.png, id=891, 962.84718pt x 462.22687pt>
 File: Figures/Figure27.png Graphic file (type png)
 
 <use Figures/Figure27.png>
 Package pdftex.def Info: Figures/Figure27.png used on input line 303.
 (pdftex.def)             Requested size: 398.32533pt x 284.52527pt.
- [44 <./Figures/Figure25.png>] [45 <./Figures/Figure26.png> <./Figures/Figure27
+ [43 <./Figures/Figure25.png>] [44 <./Figures/Figure26.png> <./Figures/Figure27
 .png>]
-<Figures/Figure28.png, id=865, 961.34157pt x 286.06876pt>
+<Figures/Figure28.png, id=901, 961.34157pt x 286.06876pt>
 File: Figures/Figure28.png Graphic file (type png)
 
 <use Figures/Figure28.png>
 Package pdftex.def Info: Figures/Figure28.png used on input line 324.
 (pdftex.def)             Requested size: 398.3479pt x 199.17296pt.
- [46 <./Figures/Figure28.png>]
-<Figures/Figure29.png, id=872, 281.55188pt x 129.48375pt>
+ [45 <./Figures/Figure28.png>]
+<Figures/Figure29.png, id=908, 281.55188pt x 129.48375pt>
 File: Figures/Figure29.png Graphic file (type png)
 
 <use Figures/Figure29.png>
 Package pdftex.def Info: Figures/Figure29.png used on input line 348.
 (pdftex.def)             Requested size: 398.36295pt x 199.1902pt.
- [47 <./Figures/Figure29.png>]
-<Figures/Figure30.png, id=878, 304.13625pt x 243.91125pt>
+ [46 <./Figures/Figure29.png>]
+<Figures/Figure30.png, id=917, 304.13625pt x 243.91125pt>
 File: Figures/Figure30.png Graphic file (type png)
 
 <use Figures/Figure30.png>
-Package pdftex.def Info: Figures/Figure30.png used on input line 371.
+Package pdftex.def Info: Figures/Figure30.png used on input line 372.
 (pdftex.def)             Requested size: 398.35178pt x 256.07713pt.
- [48 <./Figures/Figure30.png>]
-<Figures/Figure31.png, id=883, 764.8575pt x 374.14781pt>
+ [47 <./Figures/Figure30.png>]
+<Figures/Figure31.png, id=924, 764.8575pt x 374.14781pt>
 File: Figures/Figure31.png Graphic file (type png)
 
 <use Figures/Figure31.png>
-Package pdftex.def Info: Figures/Figure31.png used on input line 391.
+Package pdftex.def Info: Figures/Figure31.png used on input line 392.
 (pdftex.def)             Requested size: 398.33507pt x 256.08417pt.
-) (./Chapters/Chapter8.tex [49 <./Figures/Figure31.png>]
+
+
+Package natbib Warning: Citation `Reference38' on page 48 undefined on input li
+ne 401.
+
+) (./Chapters/Chapter8.tex [48 <./Figures/Figure31.png>]
 Chapter 8.
 ------------------------------------------------------------------------------
  8 VIRTUOSO INSTALLATION AND MANIPULATION
@@ -1511,16 +1537,16 @@ Overfull \hbox (9.74979pt too wide) in paragraph at lines 30--33
 e.com/p/virtuoso/downloads/list.
  []
 
-[50
+[49
 
-] <Figures/Figure32.png, id=893, 959.83594pt x 732.48656pt>
+] <Figures/Figure32.png, id=934, 959.83594pt x 732.48656pt>
 File: Figures/Figure32.png Graphic file (type png)
 
 <use Figures/Figure32.png>
 Package pdftex.def Info: Figures/Figure32.png used on input line 42.
 (pdftex.def)             Requested size: 398.33914pt x 256.07236pt.
 
-<Figures/Figure33.png, id=895, 962.09438pt x 371.88937pt>
+<Figures/Figure33.png, id=936, 962.09438pt x 371.88937pt>
 File: Figures/Figure33.png Graphic file (type png)
 
 <use Figures/Figure33.png>
@@ -1528,17 +1554,17 @@ Package pdftex.def Info: Figures/Figure33.png used on input line 61.
 (pdftex.def)             Requested size: 398.33687pt x 256.08188pt.
 
 
-LaTeX Warning: Reference `' on page 51 undefined on input line 67.
+LaTeX Warning: Reference `' on page 50 undefined on input line 67.
 
-[51 <./Figures/Figure32.png>]
-<Figures/Figure34.png, id=900, 544.28343pt x 368.87813pt>
+[50 <./Figures/Figure32.png>]
+<Figures/Figure34.png, id=941, 544.28343pt x 368.87813pt>
 File: Figures/Figure34.png Graphic file (type png)
 
 <use Figures/Figure34.png>
 Package pdftex.def Info: Figures/Figure34.png used on input line 71.
 (pdftex.def)             Requested size: 398.33682pt x 256.07404pt.
- [52 <./Figures/Figure33.png> <./Figures/Figure34.png>] <Figures/Figure35.png, 
-id=906, 962.84718pt x 403.5075pt>
+ [51 <./Figures/Figure33.png> <./Figures/Figure34.png>] <Figures/Figure35.png, 
+id=946, 962.84718pt x 403.5075pt>
 File: Figures/Figure35.png Graphic file (type png)
 
 <use Figures/Figure35.png>
@@ -1550,22 +1576,22 @@ Overfull \hbox (8.20868pt too wide) in paragraph at lines 101--102
 uc-tions (see iferret-logging-new/target-
  []
 
-[53 <./Figures/Figure35.png>]
-<Figures/Figure36.png, id=912, 778.40813pt x 597.73312pt>
+[52 <./Figures/Figure35.png>]
+<Figures/Figure36.png, id=953, 778.40813pt x 597.73312pt>
 File: Figures/Figure36.png Graphic file (type png)
 
 <use Figures/Figure36.png>
 Package pdftex.def Info: Figures/Figure36.png used on input line 116.
 (pdftex.def)             Requested size: 398.34882pt x 256.07169pt.
- [54 <./Figures/Figure36.png>]
-<Figures/Figure37.png, id=917, 962.84718pt x 258.9675pt>
+ [53 <./Figures/Figure36.png>]
+<Figures/Figure37.png, id=958, 962.84718pt x 258.9675pt>
 File: Figures/Figure37.png Graphic file (type png)
 
 <use Figures/Figure37.png>
 Package pdftex.def Info: Figures/Figure37.png used on input line 132.
 (pdftex.def)             Requested size: 398.32533pt x 256.10199pt.
 
-<Figures/Figure38.png, id=919, 962.84718pt x 669.2503pt>
+<Figures/Figure38.png, id=960, 962.84718pt x 669.2503pt>
 File: Figures/Figure38.png Graphic file (type png)
 
 <use Figures/Figure38.png>
@@ -1585,36 +1611,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--149
 
  []
 
-<Figures/Figure39.png, id=920, 962.84718pt x 216.81pt>
+<Figures/Figure39.png, id=961, 962.84718pt x 216.81pt>
 File: Figures/Figure39.png Graphic file (type png)
 
 <use Figures/Figure39.png>
 Package pdftex.def Info: Figures/Figure39.png used on input line 152.
 (pdftex.def)             Requested size: 398.32533pt x 199.1798pt.
- [55 <./Figures/Figure37.png>] [56 <./Figures/Figure38.png> <./Figures/Figure39
-.png>]) (./Appendices/AppendixA.tex [57]
+ [54 <./Figures/Figure37.png>] [55 <./Figures/Figure38.png> <./Figures/Figure39
+.png>]) (./Appendices/AppendixA.tex [56]
 Appendix A.
 ------------------------------------------------------------------------------
  A Appendix Title Here
 ------------------------------------------------------------------------------
-) [58
+) [57
 
 ]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
-(./main.bbl [59
+(./main.bbl [58
 
 
-])
+] [59]
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
+\OT1/cmtt/m/n/10.95 en-[]US / Red _ Hat _ Enterprise _ Linux / 6 / html / Virtu
+alization _ Administration _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
+\OT1/cmtt/m/n/10.95 Guide / chap-[]Virtualization _ Administration _ Guide-[]Vi
+rtual _ Networking .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--179
+\OT1/cmtt/m/n/10.95 / / smartech . gatech . edu / bitstream / handle / 1853 / 3
+8424 / GT-[]CS-[]11-[]05 . pdf$[][]\OT1/cmr/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 181--184
+[]\OT1/cmr/m/n/10.95 Memory anal-y-sis.  .  URL [][]$\OT1/cmtt/m/n/10.95 http :
+ / / www . forensicswiki . org / wiki / Memory _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 191--194
+[]\OT1/cmr/m/n/10.95 Volatility, .  URL [][]$\OT1/cmtt/m/n/10.95 https : / / co
+de . google . com / p / volatility / wiki /
+ []
+
+)
+
+Package natbib Warning: There were undefined citations.
+
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
- [60]
+[60]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DBAA65A42F4D57CE45130640DA4A2E46;14730.
+(rerunfilecheck)             Checksum: 6269E460CE9A3D70039058780E06E326;14170.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1625,13 +1684,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 295.
  ) 
 Here is how much of TeX's memory you used:
- 13597 strings out of 493304
- 192471 string characters out of 6139872
- 266703 words of memory out of 5000000
- 16585 multiletter control sequences out of 15000+600000
+ 13646 strings out of 493304
+ 193387 string characters out of 6139871
+ 266193 words of memory out of 5000000
+ 16624 multiletter control sequences out of 15000+600000
  14849 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,12n,45p,1587b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,12n,45p,987b,476s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1647,10 +1706,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (75 pages, 3083137 bytes).
+Output written on main.pdf (75 pages, 3086796 bytes).
 PDF statistics:
- 1067 PDF objects out of 1200 (max. 8388607)
- 914 compressed objects within 10 object streams
- 215 named destinations out of 1000 (max. 500000)
- 788 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1122 PDF objects out of 1200 (max. 8388607)
+ 959 compressed objects within 10 object streams
+ 225 named destinations out of 1000 (max. 500000)
+ 756 words of extra memory for PDF output out of 10000 (max. 10000000)
 
