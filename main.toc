@@ -23,7 +23,7 @@
 \contentsline {subsection}{\numberline {2.4.1}Delivery Pattern VMI Application}{6}{subsection.28}
 \contentsline {subsection}{\numberline {2.4.2}Derivative Pattern VMI APPLICATION}{7}{subsection.30}
 \contentsline {section}{\numberline {2.5}VMI RELATED TOOLS}{8}{section.32}
-\contentsline {subsection}{\numberline {2.5.1}LibVMI/XenAccess \cite {Reference10,Reference11}}{8}{subsection.33}
+\contentsline {subsection}{\numberline {2.5.1}LibVMI/XenAccess \cite {Reference10,Reference11}}{9}{subsection.33}
 \contentsline {subsection}{\numberline {2.5.2}Volatility \cite {Reference13}}{9}{subsection.34}
 \contentsline {subsection}{\numberline {2.5.3}Insight-VMI \cite {Reference14,Reference15}}{9}{subsection.35}
 \contentsline {chapter}{\numberline {3}INTERNSHIP\IeC {\textquoteright }S OBJECTIVE}{11}{chapter.37}
@@ -67,7 +67,7 @@
 \contentsline {section}{\numberline {8.1}Installation of VIRTUOSO}{49}{section.103}
 \contentsline {subsection}{\numberline {8.1.1}Problem 1: No SDL support for installation of QEMU 0.9.1}{50}{subsection.104}
 \contentsline {subsection}{\numberline {8.1.2}Problem 2: iFerret compile error}{50}{subsection.106}
-\contentsline {subsection}{\numberline {8.1.3}Problem3: The abort of execution of example VM image}{52}{subsection.109}
+\contentsline {subsection}{\numberline {8.1.3}Problem 3: The abort of execution of example VM image}{52}{subsection.109}
 \contentsline {subsection}{\numberline {8.1.4}Problem 4: IPython runtime exception when generating inspection code with VIRTUOSO}{54}{subsection.112}
 \contentsline {section}{\numberline {8.2}Assessment of VIRTUOSO}{55}{section.116}
 \vspace {2em}
