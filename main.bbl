@@ -1,9 +1,17 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Chen and Noble(2001)]{Reference26}
+Peter~M. Chen and Brian~D. Noble.
+\newblock When virtual is better than real.
+\newblock In \emph{Proceedings of the Eighth Workshop on Hot Topics in
+  Operating Systems}, pages 133--, Washington, DC, USA, 2001. IEEE Computer
+  Society.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=874075.876409}.
 
 \bibitem[Hay and Nance(2008)]{Reference10}
 Brian Hay and Kara Nance.
@@ -73,6 +81,25 @@ Stephen~T. Jones, Andrea~C. Arpaci-dusseau, and Remzi~H. Arpaci-dusseau.
 \newblock Antfarm: Tracking processes in a virtual machine environment.
 \newblock In \emph{in Proc. of the USENIX Annual Technical Conf}, 2006.
 
+\bibitem[Dolan-Gavitt et~al.(2011)Dolan-Gavitt, Leek, Zhivich, Giffin, and
+  Lee]{Reference27}
+Brendan Dolan-Gavitt, Tim Leek, Michael Zhivich, Jonathon Giffin, and Wenke
+  Lee.
+\newblock Virtuoso: Narrowing the semantic gap in virtual machine
+  introspection.
+\newblock \emph{2013 IEEE Symposium on Security and Privacy}, 0:\penalty0
+  297--312, 2011.
+\newblock ISSN 1081-6011.
+\newblock \doi{http://doi.ieeecomputersociety.org/10.1109/SP.2011.11}.
+
+\bibitem[Fu and Lin(2012)]{Reference28}
+Yangchun Fu and Zhiqiang Lin.
+\newblock Space traveling across vm: Automatically bridging the semantic gap in
+  virtual machine introspection via online kernel data redirection.
+\newblock In \emph{Proceedings of the 2012 IEEE Symposium on Security and
+  Privacy}, pages 586--600, Washington, DC, USA, 2012. IEEE Computer Society.
+\newblock URL \url{http://dx.doi.org/10.1109/SP.2012.40}.
+
 \bibitem[Hizver and Chiueh(2014)]{Reference3}
 Jennia Hizver and Tzi-cker Chiueh.
 \newblock Real-time deep virtual machine introspection and its applications.
@@ -94,5 +121,10 @@ What is kvm virtualization in linux?
 \newblock
   \url{http://www.linuxnix.com/2013/02/what-is-kvm-virtualization-in-linux.html},
   {\natexlab{b}}.
+
+\bibitem[Ref({\natexlab{c}})]{Reference23}
+Libvirt community developers.
+\newblock {\natexlab{c}}.
+\newblock URL \url{http://libvirt.org/goals.html}.
 
 \end{thebibliography}

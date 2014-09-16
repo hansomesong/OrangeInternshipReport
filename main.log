@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.1)  16 SEP 2014 18:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.7.1)  16 SEP 2014 19:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -791,12 +791,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--121
 ------------------------------------------------------------------------------
  Table of Contents
 ------------------------------------------------------------------------------
-(./main.toc
-
-Package natbib Warning: Citation `Reference26' on page v undefined on input lin
-e 16.
-
-[5
+(./main.toc [5
 
 
 ] [6])
@@ -870,10 +865,6 @@ Chapter 2.
  2 STATE-OF-THE-ART ABOUT VMI
 ------------------------------------------------------------------------------
 
-Package natbib Warning: Citation `Reference26' on page 2 undefined on input lin
-e 15.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\begingroup' on input line 15.
 
@@ -903,16 +894,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [2
 
-]
-
-Package natbib Warning: Citation `Reference27' on page 3 undefined on input lin
-e 32.
-
-
-Package natbib Warning: Citation `Reference28' on page 3 undefined on input lin
-e 32.
-
-[3] [4] [5] [6] <Figures/Figure1.pdf, id=598, 454.69875pt x 170.6375pt>
+] [3] [4] [5] [6] <Figures/Figure1.pdf, id=605, 454.69875pt x 170.6375pt>
 File: Figures/Figure1.pdf Graphic file (type pdf)
 
 <use Figures/Figure1.pdf>
@@ -924,7 +906,7 @@ Overfull \hbox (37.22456pt too wide) in paragraph at lines 72--74
  []
 
 [7 <./Figures/Figure1.pdf>]
-<Figures/Figure2.pdf, id=617, 455.7025pt x 198.7425pt>
+<Figures/Figure2.pdf, id=624, 455.7025pt x 198.7425pt>
 File: Figures/Figure2.pdf Graphic file (type pdf)
 
 <use Figures/Figure2.pdf>
@@ -1026,7 +1008,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\new@ifnextchar' on input line 109.
 
-<Figures/Figure3.pdf, id=641, 433.62pt x 147.55125pt>
+<Figures/Figure3.pdf, id=648, 433.62pt x 147.55125pt>
 File: Figures/Figure3.pdf Graphic file (type pdf)
 
 <use Figures/Figure3.pdf>
@@ -1086,7 +1068,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 ------------------------------------------------------------------------------
 [13
 
-] <Figures/Figure4.png, id=678, 465.23813pt x 167.87718pt>
+] <Figures/Figure4.png, id=685, 465.23813pt x 167.87718pt>
 File: Figures/Figure4.png Graphic file (type png)
 
 <use Figures/Figure4.png>
@@ -1100,7 +1082,7 @@ Chapter 5.
 ------------------------------------------------------------------------------
 [16
 
-] <Figures/Figure5.png, id=692, 530.73282pt x 255.95625pt>
+] <Figures/Figure5.png, id=699, 530.73282pt x 255.95625pt>
 File: Figures/Figure5.png Graphic file (type png)
 
 <use Figures/Figure5.png>
@@ -1111,7 +1093,7 @@ Overfull \hbox (7.11375pt too wide) in paragraph at lines 41--42
  [][] 
  []
 
-<Figures/Figure6.png, id=693, 503.63156pt x 517.18219pt>
+<Figures/Figure6.png, id=700, 503.63156pt x 517.18219pt>
 File: Figures/Figure6.png Graphic file (type png)
 
 <use Figures/Figure6.png>
@@ -1124,7 +1106,7 @@ Then we could is-sue com-mand
  []
 
 [17 <./Figures/Figure5.png>] [18 <./Figures/Figure6.png>]
-<Figures/Figure7.png, id=704, 455.45157pt x 281.55188pt>
+<Figures/Figure7.png, id=711, 455.45157pt x 281.55188pt>
 File: Figures/Figure7.png Graphic file (type png)
 
 <use Figures/Figure7.png>
@@ -1136,18 +1118,14 @@ Overfull \hbox (126.42839pt too wide) in paragraph at lines 130--133
 th link: https://help.ubuntu.com/community/KVM/Directly 
  []
 
-
-Package natbib Warning: Citation `Reference23' on page 20 undefined on input li
-ne 136.
-
-[20] <Figures/Figure8.png, id=713, 225.84375pt x 127.22531pt>
+[20] <Figures/Figure8.png, id=722, 225.84375pt x 127.22531pt>
 File: Figures/Figure8.png Graphic file (type png)
 
 <use Figures/Figure8.png>
 Package pdftex.def Info: Figures/Figure8.png used on input line 145.
 (pdftex.def)             Requested size: 271.01112pt x 152.66959pt.
 
-<Figures/Figure9.png, id=716, 717.43031pt x 460.72125pt>
+<Figures/Figure9.png, id=725, 717.43031pt x 460.72125pt>
 File: Figures/Figure9.png Graphic file (type png)
 
 <use Figures/Figure9.png>
@@ -1169,14 +1147,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 188--190
 
  []
 
-<Figures/Figure10.png, id=723, 513.41812pt x 304.88907pt>
+<Figures/Figure10.png, id=732, 513.41812pt x 304.88907pt>
 File: Figures/Figure10.png Graphic file (type png)
 
 <use Figures/Figure10.png>
 Package pdftex.def Info: Figures/Figure10.png used on input line 195.
 (pdftex.def)             Requested size: 256.70842pt x 152.44415pt.
  [22 <./Figures/Figure9.png>]
-<Figures/Figure11.png, id=729, 542.025pt x 342.5297pt>
+<Figures/Figure11.png, id=739, 542.025pt x 342.5297pt>
 File: Figures/Figure11.png Graphic file (type png)
 
 <use Figures/Figure11.png>
@@ -1188,44 +1166,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 216--224
  []
 
 [23 <./Figures/Figure10.png>]
-<Figures/Figure12.png, id=735, 963.6pt x 770.88pt>
+<Figures/Figure12.png, id=744, 963.6pt x 770.88pt>
 File: Figures/Figure12.png Graphic file (type png)
  <use Figures/Figure12.png>
 Package pdftex.def Info: Figures/Figure12.png used on input line 232.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-<Figures/Figure13.png, id=737, 963.6pt x 770.88pt>
+<Figures/Figure13.png, id=746, 963.6pt x 770.88pt>
 File: Figures/Figure13.png Graphic file (type png)
  <use Figures/Figure13.png>
 Package pdftex.def Info: Figures/Figure13.png used on input line 240.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
 [24 <./Figures/Figure11.png>]
-<Figures/Figure14.png, id=743, 963.6pt x 770.88pt>
+<Figures/Figure14.png, id=752, 963.6pt x 770.88pt>
 File: Figures/Figure14.png Graphic file (type png)
  <use Figures/Figure14.png>
 Package pdftex.def Info: Figures/Figure14.png used on input line 248.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-<Figures/Figure15.png, id=745, 963.6pt x 770.88pt>
+<Figures/Figure15.png, id=754, 963.6pt x 770.88pt>
 File: Figures/Figure15.png Graphic file (type png)
  <use Figures/Figure15.png>
 Package pdftex.def Info: Figures/Figure15.png used on input line 256.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-<Figures/Figure16.png, id=747, 963.6pt x 770.88pt>
+<Figures/Figure16.png, id=756, 963.6pt x 770.88pt>
 File: Figures/Figure16.png Graphic file (type png)
  <use Figures/Figure16.png>
 Package pdftex.def Info: Figures/Figure16.png used on input line 264.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-<Figures/Figure17.png, id=749, 963.6pt x 770.88pt>
+<Figures/Figure17.png, id=758, 963.6pt x 770.88pt>
 File: Figures/Figure17.png Graphic file (type png)
  <use Figures/Figure17.png>
 Package pdftex.def Info: Figures/Figure17.png used on input line 272.
 (pdftex.def)             Requested size: 385.43317pt x 308.34654pt.
 
-<Figures/Figure18.png, id=751, 962.84718pt x 249.18094pt>
+<Figures/Figure18.png, id=760, 962.84718pt x 249.18094pt>
 File: Figures/Figure18.png Graphic file (type png)
 
 <use Figures/Figure18.png>
@@ -1240,7 +1218,7 @@ Chapter 6.
 ------------------------------------------------------------------------------
 [29
 
-] <Figures/Figure19.png, id=774, 963.6pt x 734.745pt>
+] <Figures/Figure19.png, id=783, 963.6pt x 734.745pt>
 File: Figures/Figure19.png Graphic file (type png)
 
 <use Figures/Figure19.png>
@@ -1254,7 +1232,7 @@ Chapter 7.
 ------------------------------------------------------------------------------
 [33
 
-] [34] <Figures/Figure20.png, id=798, 567.62062pt x 188.95593pt>
+] [34] <Figures/Figure20.png, id=807, 567.62062pt x 188.95593pt>
 File: Figures/Figure20.png Graphic file (type png)
 
 <use Figures/Figure20.png>
@@ -1322,7 +1300,7 @@ Overfull \hbox (12.67885pt too wide) in paragraph at lines 86--108
 //ytliu.info/blog/2014/03/27/kvm-
  []
 
-[36] <Figures/Figure21.png, id=807, 752.8125pt x 417.05812pt>
+[36] <Figures/Figure21.png, id=816, 752.8125pt x 417.05812pt>
 File: Figures/Figure21.png Graphic file (type png)
 
 <use Figures/Figure21.png>
@@ -1427,7 +1405,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 180--188
  []
 
 [39 <./Figures/Figure21.png>]
-<Figures/Figure22.png, id=820, 548.0475pt x 210.03468pt>
+<Figures/Figure22.png, id=829, 548.0475pt x 210.03468pt>
 File: Figures/Figure22.png Graphic file (type png)
 
 <use Figures/Figure22.png>
@@ -1459,35 +1437,35 @@ Overfull \hbox (176.16982pt too wide) in paragraph at lines 219--225
  http://code.google.com/p/volatility/wiki/VolatilityIntroduction?tm=6 
  []
 
-[41] <Figures/Figure23.png, id=831, 790.45313pt x 250.68657pt>
+[41] <Figures/Figure23.png, id=840, 790.45313pt x 250.68657pt>
 File: Figures/Figure23.png Graphic file (type png)
 
 <use Figures/Figure23.png>
 Package pdftex.def Info: Figures/Figure23.png used on input line 252.
 (pdftex.def)             Requested size: 398.3374pt x 284.55777pt.
 
-<Figures/Figure24.png, id=832, 331.2375pt x 157.33781pt>
+<Figures/Figure24.png, id=841, 331.2375pt x 157.33781pt>
 File: Figures/Figure24.png Graphic file (type png)
 
 <use Figures/Figure24.png>
 Package pdftex.def Info: Figures/Figure24.png used on input line 262.
 (pdftex.def)             Requested size: 398.35739pt x 284.57147pt.
 
-<Figures/Figure25.png, id=834, 692.5875pt x 347.04657pt>
+<Figures/Figure25.png, id=843, 692.5875pt x 347.04657pt>
 File: Figures/Figure25.png Graphic file (type png)
 
 <use Figures/Figure25.png>
 Package pdftex.def Info: Figures/Figure25.png used on input line 274.
 (pdftex.def)             Requested size: 398.35097pt x 284.53766pt.
  [42] [43 <./Figures/Figure23.png> <./Figures/Figure24.png>] <Figures/Figure26.
-png, id=845, 962.09438pt x 584.93532pt>
+png, id=854, 962.09438pt x 584.93532pt>
 File: Figures/Figure26.png Graphic file (type png)
 
 <use Figures/Figure26.png>
 Package pdftex.def Info: Figures/Figure26.png used on input line 286.
 (pdftex.def)             Requested size: 398.33687pt x 284.53227pt.
 
-<Figures/Figure27.png, id=847, 962.84718pt x 462.22687pt>
+<Figures/Figure27.png, id=856, 962.84718pt x 462.22687pt>
 File: Figures/Figure27.png Graphic file (type png)
 
 <use Figures/Figure27.png>
@@ -1495,28 +1473,28 @@ Package pdftex.def Info: Figures/Figure27.png used on input line 303.
 (pdftex.def)             Requested size: 398.32533pt x 284.52527pt.
  [44 <./Figures/Figure25.png>] [45 <./Figures/Figure26.png> <./Figures/Figure27
 .png>]
-<Figures/Figure28.png, id=856, 961.34157pt x 286.06876pt>
+<Figures/Figure28.png, id=865, 961.34157pt x 286.06876pt>
 File: Figures/Figure28.png Graphic file (type png)
 
 <use Figures/Figure28.png>
 Package pdftex.def Info: Figures/Figure28.png used on input line 324.
 (pdftex.def)             Requested size: 398.3479pt x 199.17296pt.
  [46 <./Figures/Figure28.png>]
-<Figures/Figure29.png, id=863, 281.55188pt x 129.48375pt>
+<Figures/Figure29.png, id=872, 281.55188pt x 129.48375pt>
 File: Figures/Figure29.png Graphic file (type png)
 
 <use Figures/Figure29.png>
 Package pdftex.def Info: Figures/Figure29.png used on input line 348.
 (pdftex.def)             Requested size: 398.36295pt x 199.1902pt.
  [47 <./Figures/Figure29.png>]
-<Figures/Figure30.png, id=869, 304.13625pt x 243.91125pt>
+<Figures/Figure30.png, id=878, 304.13625pt x 243.91125pt>
 File: Figures/Figure30.png Graphic file (type png)
 
 <use Figures/Figure30.png>
 Package pdftex.def Info: Figures/Figure30.png used on input line 371.
 (pdftex.def)             Requested size: 398.35178pt x 256.07713pt.
  [48 <./Figures/Figure30.png>]
-<Figures/Figure31.png, id=874, 764.8575pt x 374.14781pt>
+<Figures/Figure31.png, id=883, 764.8575pt x 374.14781pt>
 File: Figures/Figure31.png Graphic file (type png)
 
 <use Figures/Figure31.png>
@@ -1535,14 +1513,14 @@ e.com/p/virtuoso/downloads/list.
 
 [50
 
-] <Figures/Figure32.png, id=884, 959.83594pt x 732.48656pt>
+] <Figures/Figure32.png, id=893, 959.83594pt x 732.48656pt>
 File: Figures/Figure32.png Graphic file (type png)
 
 <use Figures/Figure32.png>
 Package pdftex.def Info: Figures/Figure32.png used on input line 42.
 (pdftex.def)             Requested size: 398.33914pt x 256.07236pt.
 
-<Figures/Figure33.png, id=886, 962.09438pt x 371.88937pt>
+<Figures/Figure33.png, id=895, 962.09438pt x 371.88937pt>
 File: Figures/Figure33.png Graphic file (type png)
 
 <use Figures/Figure33.png>
@@ -1553,14 +1531,14 @@ Package pdftex.def Info: Figures/Figure33.png used on input line 61.
 LaTeX Warning: Reference `' on page 51 undefined on input line 67.
 
 [51 <./Figures/Figure32.png>]
-<Figures/Figure34.png, id=891, 544.28343pt x 368.87813pt>
+<Figures/Figure34.png, id=900, 544.28343pt x 368.87813pt>
 File: Figures/Figure34.png Graphic file (type png)
 
 <use Figures/Figure34.png>
 Package pdftex.def Info: Figures/Figure34.png used on input line 71.
 (pdftex.def)             Requested size: 398.33682pt x 256.07404pt.
  [52 <./Figures/Figure33.png> <./Figures/Figure34.png>] <Figures/Figure35.png, 
-id=897, 962.84718pt x 403.5075pt>
+id=906, 962.84718pt x 403.5075pt>
 File: Figures/Figure35.png Graphic file (type png)
 
 <use Figures/Figure35.png>
@@ -1573,21 +1551,21 @@ uc-tions (see iferret-logging-new/target-
  []
 
 [53 <./Figures/Figure35.png>]
-<Figures/Figure36.png, id=903, 778.40813pt x 597.73312pt>
+<Figures/Figure36.png, id=912, 778.40813pt x 597.73312pt>
 File: Figures/Figure36.png Graphic file (type png)
 
 <use Figures/Figure36.png>
 Package pdftex.def Info: Figures/Figure36.png used on input line 116.
 (pdftex.def)             Requested size: 398.34882pt x 256.07169pt.
  [54 <./Figures/Figure36.png>]
-<Figures/Figure37.png, id=908, 962.84718pt x 258.9675pt>
+<Figures/Figure37.png, id=917, 962.84718pt x 258.9675pt>
 File: Figures/Figure37.png Graphic file (type png)
 
 <use Figures/Figure37.png>
 Package pdftex.def Info: Figures/Figure37.png used on input line 132.
 (pdftex.def)             Requested size: 398.32533pt x 256.10199pt.
 
-<Figures/Figure38.png, id=910, 962.84718pt x 669.2503pt>
+<Figures/Figure38.png, id=919, 962.84718pt x 669.2503pt>
 File: Figures/Figure38.png Graphic file (type png)
 
 <use Figures/Figure38.png>
@@ -1607,7 +1585,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--149
 
  []
 
-<Figures/Figure39.png, id=911, 962.84718pt x 216.81pt>
+<Figures/Figure39.png, id=920, 962.84718pt x 216.81pt>
 File: Figures/Figure39.png Graphic file (type png)
 
 <use Figures/Figure39.png>
@@ -1629,11 +1607,8 @@ Appendix A.
 
 
 ])
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
-[60]
+ [60]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
@@ -1650,13 +1625,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 295.
  ) 
 Here is how much of TeX's memory you used:
- 13585 strings out of 493304
- 192231 string characters out of 6139872
- 266537 words of memory out of 5000000
- 16577 multiletter control sequences out of 15000+600000
+ 13597 strings out of 493304
+ 192471 string characters out of 6139872
+ 266703 words of memory out of 5000000
+ 16585 multiletter control sequences out of 15000+600000
  14849 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 49i,12n,45p,1587b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,12n,45p,1587b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1672,10 +1647,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on main.pdf (75 pages, 3081137 bytes).
+Output written on main.pdf (75 pages, 3083137 bytes).
 PDF statistics:
- 1052 PDF objects out of 1200 (max. 8388607)
- 900 compressed objects within 9 object streams
- 211 named destinations out of 1000 (max. 500000)
+ 1067 PDF objects out of 1200 (max. 8388607)
+ 914 compressed objects within 10 object streams
+ 215 named destinations out of 1000 (max. 500000)
  788 words of extra memory for PDF output out of 10000 (max. 10000000)
 
