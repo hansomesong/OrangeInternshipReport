@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: unsrtnat.bst
+Database file #1: Bibliography.bib
+A bad cross reference---entry "Reference11"
+refers to entry "conf/acsac/2007", which doesn't exist
+Warning--I didn't find a database entry for "Reference26"
+Warning--I didn't find a database entry for "Reference27"
+Warning--I didn't find a database entry for "Reference28"
+Warning--I didn't find a database entry for "Reference23"
+Warning--I didn't find a database entry for "conf/acsac/2007"
+Warning--empty year in Reference11
+Warning--empty year in Reference11
+Warning--empty author in Reference13
+Warning--empty journal in Reference13
+Warning--empty year in Reference13
+Warning--empty journal in Reference7
+Warning--empty year in Reference20
+You've used 12 entries,
+            2481 wiz_defined-function locations,
+            659 strings with 7183 characters,
+and the built_in function-call counts, 5046 in all, are:
+= -- 484
+> -- 174
+< -- 13
++ -- 73
+- -- 48
+* -- 349
+:= -- 726
+add.period$ -- 53
+call.type$ -- 12
+change.case$ -- 24
+chr.to.int$ -- 11
+cite$ -- 21
+duplicate$ -- 291
+empty$ -- 492
+format.name$ -- 68
+if$ -- 1151
+int.to.chr$ -- 2
+int.to.str$ -- 13
+missing$ -- 11
+newline$ -- 79
+num.names$ -- 32
+pop$ -- 123
+preamble$ -- 1
+purify$ -- 12
+quote$ -- 0
+skip$ -- 182
+stack$ -- 0
+substring$ -- 199
+swap$ -- 75
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 84
+warning$ -- 7
+while$ -- 40
+width$ -- 0
+write$ -- 189
+(There was 1 error message)

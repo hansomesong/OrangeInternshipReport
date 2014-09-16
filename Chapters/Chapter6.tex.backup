@@ -1,0 +1,51 @@
+% Chapter Template
+
+\chapter{Nitro installation and manipulation} % Main chapter title
+
+\label{Chapter6} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+\lhead{Chapter 6. \emph{Nitro installation and manipulation}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+
+%----------------------------------------------------------------------------------------
+%	SECTION 1
+%----------------------------------------------------------------------------------------
+
+\section{Installation of Nitro}
+
+Pfoh has created a website, http://nitro.pfoh.net/setup.html, where he gives a general introduction about Nitro’s setup. To reduce the length of this report, it’s advised to carefully follow Pfoh’s tutorial when installing Nitro. Here we just provide some extra explanations and complements on the basis of his initial tutorial. Remember Nitro consists of three components:
+\begin{itemize}
+    \item Kernel Modules - This component is a fork of KVM. It has been extended to provide additional IOCTL calls that can be leveraged to perform VMI.
+    \item QEMU - This is a fork of QEMU, the component that provides the user land support for KVM. It is only slightly modified such that it exposes direct access to the guest's physical memory, which Nitro can take advantage of.
+    \item Nitro/libnitro - This is the user land component that actually performs VMI. Nitro (this term here represents an executable file/command as opposed to the Nitro project.) calls those APIs defined in libnitro. Remember Nitro is just a prototype implementation which still needs much more enhancements if you want more functionality and could be used as a technique block in other projects. To facilitate possible further work, we have added plenty of comments in Nitro’s source code files. We put Nitro’s source files in path /home/cloud/nitro.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	SECTION 2
+%----------------------------------------------------------------------------------------
+
+\section{Manipulation of Nitro}
+
+To use Nitro, some preliminary work is necessary, including replace initial KVM modules by a modified one for Nitro, 
+mount a huge pages type device under /tmp directory and finally increase the number of huge pages available to your system. 
+If you are not familiar with huge pages, this tutorial is a good start point: https://wiki.debian.org/Hugepages. 
+To automate this work, we have written a bash shell script named “load\_mods”, which is located in the root of working directory (/home/cloud/load\_mods). 
+If not precise, all script files for Nitro are in the same location. 
+
+Once the huge table file system is set up, QEMU could be launched. 
+Note that Nitro uses a modified version of QEMU to directly access the guest's physical memory. 
+We put this QEMU in the root of user cloud’s working directory (/home/cloud/qemu). 
+When staring the modified QEMU, it works in the same manner as starting vanilla QEMU with KVM support, 
+but you must include option “-mem-path [PATH] -mem-prealloc” in the end of QEMU command line. 
+It is recommended to use a bash script to automate this work. For example, to start guest with WIN7 OS, 
+we write a script named “win7start”.
+
+Finally, it’s time to launch Nitro to monitor the already running VM. We have also a script “NitroStart” for this work. 
+Note that Nitro command syntax is “./Nitro PID GUEST\_RAM\_FILE”. Figure \ref{fig:Truncated output of Nitro for a Win7 64bit VM} shows a part of output of Nitro.
+
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=14cm, height= 10cm ]{Figures/Figure19.png}
+	\caption[Truncated output of Nitro for a Win7 64bit VM]{Truncated output of Nitro for a Win7 64bit VM}
+	\label{fig:Truncated output of Nitro for a Win7 64bit VM}
+\end{figure}
+

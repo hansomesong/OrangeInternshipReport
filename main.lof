@@ -1,0 +1,48 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Out-of-Band pattern VMI applications}}{7}{figure.caption.29}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Derivative pattern VMI applications}}{8}{figure.caption.31}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces VMI Tool manifest}}{10}{figure.caption.36}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Out-of-Band pattern VMI applications}}{14}{figure.caption.39}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces HP Workstation static network configuration}}{17}{figure.caption.47}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Firefox proxy parameter}}{18}{figure.caption.48}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces KVM Virtualization Architecture in Linux}}{19}{figure.caption.51}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Relationship between virsh, virt-manager and libvirt}}{21}{figure.caption.58}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces User networking mode topology}}{22}{figure.caption.61}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Virtual network on NAT mode}}{23}{figure.caption.64}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Output of kvm-ok command}}{24}{figure.caption.66}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Step 1-Create a new VM with name win7\_64bit}}{25}{figure.caption.68}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Step 2-Choose win7 ISO file}}{26}{figure.caption.69}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Step 3-Create a virtual disk of 20G}}{26}{figure.caption.70}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Step 4-Indicate virtual disk location for guest installation}}{27}{figure.caption.71}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Step 5-Guest installation configuration resume}}{27}{figure.caption.72}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Guest machine ping host machine}}{28}{figure.caption.73}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Guest as a qemu process in host machine}}{28}{figure.caption.74}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Truncated output of Nitro for a Win7 64bit VM}}{30}{figure.caption.78}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Comparison of VMI and FMA}}{35}{figure.caption.83}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Output of ./configure for LibVMI}}{39}{figure.caption.85}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Import Pyvmi in Python interactive Shell}}{40}{figure.caption.86}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Windows Core Plugin List}}{43}{figure.caption.91}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Windows GUI and Malware Plugins List}}{43}{figure.caption.92}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Linux Memory Forensic Plugin}}{44}{figure.caption.93}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Volatility netscan(for windows) plugin's output}}{45}{figure.caption.94}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Supported Profile List in Our KVM Platform}}{45}{figure.caption.96}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Volatility Supported Address Space}}{46}{figure.caption.98}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Software stack with PyVMI wrapper on top of the C language LibVMI library}}{47}{figure.caption.100}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Software stack with Volatility address space plugin}}{48}{figure.caption.102}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Experimentation Result of Volatility Plugins in KVM Platform}}{49}{figure.caption.105}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces No SDL support for installation of QEMU 0.9.1}}{51}{figure.caption.109}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces iFerret compile error}}{52}{figure.caption.111}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Bloc of code causing compile error}}{52}{figure.caption.112}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Abort of execution of example VM image}}{53}{figure.caption.114}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Run Training program in trusted VM}}{54}{figure.caption.115}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces IPython run exception}}{55}{figure.caption.117}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces VIRTUOSO introspection tool generation}}{56}{figure.caption.118}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces VIRTUOSO introspection tool execution result}}{56}{figure.caption.119}
+\addvspace {10\p@ }

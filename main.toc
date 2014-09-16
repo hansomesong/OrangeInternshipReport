@@ -1,0 +1,80 @@
+\contentsline {chapter}{Declaration of Authorship}{i}{dummy.1}
+\vspace {1em}
+\contentsline {chapter}{Abstract}{iii}{dummy.2}
+\vspace {1em}
+\contentsline {chapter}{Acknowledgements}{iv}{dummy.3}
+\vspace {1em}
+\contentsline {chapter}{Contents}{v}{dummy.4}
+\contentsline {chapter}{List of Figures}{viii}{dummy.6}
+\contentsline {chapter}{List of Tables}{x}{dummy.8}
+\contentsline {chapter}{Abbreviations}{xi}{dummy.10}
+\contentsline {chapter}{Physical Constants}{xii}{dummy.13}
+\contentsline {chapter}{Symbols}{xiii}{dummy.16}
+\vspace {2em}
+\contentsline {chapter}{\numberline {1}INTRODUCTION}{1}{chapter.19}
+\contentsline {chapter}{\numberline {2}STATE-OF-THE-ART ABOUT VMI}{2}{chapter.20}
+\contentsline {section}{\numberline {2.1}SEMANTIC GAP \citep {Reference26}}{2}{section.21}
+\contentsline {section}{\numberline {2.2}VMI-RELATED TERMINOLOGY}{2}{section.22}
+\contentsline {subsection}{\numberline {2.2.1}Semantically awareness VS semantically unawareness}{2}{subsection.23}
+\contentsline {subsection}{\numberline {2.2.2}Derivative pattern VS Delivery pattern}{3}{subsection.24}
+\contentsline {subsection}{\numberline {2.2.3}Reutilization pattern}{3}{subsection.25}
+\contentsline {section}{\numberline {2.3}VMI TECHNOLOGY EVOLUTION}{4}{section.26}
+\contentsline {section}{\numberline {2.4}REPRESENTIVE VMI APPLICATION}{6}{section.27}
+\contentsline {subsection}{\numberline {2.4.1}Delivery Pattern VMI Application}{6}{subsection.28}
+\contentsline {subsection}{\numberline {2.4.2}Derivative Pattern VMI APPLICATION}{7}{subsection.30}
+\contentsline {section}{\numberline {2.5}VMI RELATED TOOLS}{8}{section.32}
+\contentsline {subsection}{\numberline {2.5.1}LibVMI/XenAccess \citep {Reference10,Reference11}}{9}{subsection.33}
+\contentsline {subsection}{\numberline {2.5.2}Volatility \citep {Reference13}}{9}{subsection.34}
+\contentsline {subsection}{\numberline {2.5.3}Insight-VMI \citep {Reference14,Reference15}}{9}{subsection.35}
+\contentsline {chapter}{\numberline {3}INTERNSHIP\IeC {\textquoteright }S OBJECTIVE}{11}{chapter.37}
+\contentsline {chapter}{\numberline {4}STUDY OF VMWALL\citep {Reference2}}{13}{chapter.38}
+\contentsline {section}{\numberline {4.1}Main Section 1}{14}{section.40}
+\contentsline {subsection}{\numberline {4.1.1}Subsection 1}{14}{subsection.41}
+\contentsline {subsection}{\numberline {4.1.2}Subsection 2}{14}{subsection.42}
+\contentsline {section}{\numberline {4.2}Main Section 2}{15}{section.43}
+\contentsline {chapter}{\numberline {5}ESTABLISHMENT OF EXPERIMENTATION PLATFORM}{16}{chapter.44}
+\contentsline {section}{\numberline {5.1}WIN7 and UBUNTU DUAL-BOOT SYSTEM}{16}{section.45}
+\contentsline {section}{\numberline {5.2}NETWORK CONFIGURATION}{17}{section.46}
+\contentsline {section}{\numberline {5.3}KVM Introduction}{18}{section.49}
+\contentsline {section}{\numberline {5.4}KVM\IeC {\textquoteright }s Operating Principle}{19}{section.50}
+\contentsline {section}{\numberline {5.5}KVM\IeC {\textquoteright }s VM Management Tools}{19}{section.52}
+\contentsline {subsection}{\numberline {5.5.1}virt-manager}{19}{subsection.53}
+\contentsline {subsection}{\numberline {5.5.2}virsh}{20}{subsection.54}
+\contentsline {subsection}{\numberline {5.5.3}qemu command line with ''enable-kvm'' option}{20}{subsection.55}
+\contentsline {subsection}{\numberline {5.5.4}KVM command}{20}{subsection.56}
+\contentsline {subsection}{\numberline {5.5.5}Libvirt}{20}{subsection.57}
+\contentsline {section}{\numberline {5.6}KVM/QEMU networking}{21}{section.59}
+\contentsline {subsection}{\numberline {5.6.1}User Networking}{21}{subsection.60}
+\contentsline {subsection}{\numberline {5.6.2}Bridged Networking}{21}{subsection.62}
+\contentsline {subsection}{\numberline {5.6.3}networking mode}{23}{subsection.63}
+\contentsline {section}{\numberline {5.7}KVM installation}{23}{section.65}
+\contentsline {section}{\numberline {5.8}KVM Win7 Guest Manipulation}{24}{section.67}
+\contentsline {chapter}{\numberline {6}Nitro installation and manipulation}{29}{chapter.75}
+\contentsline {section}{\numberline {6.1}Installation of Nitro}{29}{section.76}
+\contentsline {section}{\numberline {6.2}Manipulation of Nitro}{30}{section.77}
+\contentsline {section}{\numberline {6.3}Assessment of Nitro}{31}{section.79}
+\contentsline {chapter}{\numberline {7}LibVMI\&Volatility manipulation}{33}{chapter.80}
+\contentsline {section}{\numberline {7.1}introduction}{33}{section.81}
+\contentsline {section}{\numberline {7.2}FORENSIC MEMORY ANALYSIS TOOL}{34}{section.82}
+\contentsline {section}{\numberline {7.3}INSTALLATION LIBVMI AND VOLATILITY IN KVM}{36}{section.84}
+\contentsline {section}{\numberline {7.4}Explore Volatility with LibVMI}{41}{section.87}
+\contentsline {subsection}{\numberline {7.4.1}Introduction about Volatility}{41}{subsection.88}
+\contentsline {subsection}{\numberline {7.4.2}Volatility Usage}{42}{subsection.89}
+\contentsline {subsection}{\numberline {7.4.3}Plugin}{42}{subsection.90}
+\contentsline {subsection}{\numberline {7.4.4}Profile}{44}{subsection.95}
+\contentsline {subsection}{\numberline {7.4.5}Address Space}{46}{subsection.97}
+\contentsline {section}{\numberline {7.5}Cooperation with LibVMI}{47}{section.99}
+\contentsline {subsection}{\numberline {7.5.1}PyVMI Address Space Plugin}{47}{subsection.101}
+\contentsline {subsection}{\numberline {7.5.2}Pyvmifs.py script}{48}{subsection.103}
+\contentsline {section}{\numberline {7.6}Experimentation Result}{49}{section.104}
+\contentsline {chapter}{\numberline {8}VIRTUOSO INSTALLATION AND MANIPULATION}{50}{chapter.106}
+\contentsline {section}{\numberline {8.1}Installation of VIRTUOSO}{50}{section.107}
+\contentsline {subsection}{\numberline {8.1.1}Problem 1: No SDL support for installation of QEMU 0.9.1}{51}{subsection.108}
+\contentsline {subsection}{\numberline {8.1.2}Problem 2: iFerret compile error}{51}{subsection.110}
+\contentsline {subsection}{\numberline {8.1.3}Problem3: The abort of execution of example VM image}{53}{subsection.113}
+\contentsline {subsection}{\numberline {8.1.4}Problem 4: IPython runtime exception when generating inspection code with VIRTUOSO}{55}{subsection.116}
+\contentsline {section}{\numberline {8.2}Assessment of VIRTUOSO}{56}{section.120}
+\vspace {2em}
+\contentsline {chapter}{\numberline {A}Appendix Title Here}{58}{appendix.121}
+\vspace {2em}
+\contentsline {chapter}{Bibliography}{59}{dummy.122}

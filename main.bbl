@@ -1,0 +1,98 @@
+\begin{thebibliography}{12}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Hay and Nance(2008)]{Reference10}
+Brian Hay and Kara Nance.
+\newblock Forensics examination of volatile system data using virtual
+  introspection.
+\newblock \emph{SIGOPS Oper. Syst. Rev.}, 42\penalty0 (3):\penalty0 74--82,
+  2008.
+\newblock ISSN 0163-5980.
+\newblock \doi{10.1145/1368506.1368517}.
+\newblock URL \url{http://doi.acm.org/10.1145/1368506.1368517}.
+
+\bibitem[Payne and Lee()]{Reference11}
+Bryan~D. Payne and Wenke Lee.
+\newblock Secure and flexible monitoring of virtual machines.
+\newblock In \emph{ACSAC}, pages 385--397. IEEE Computer Society.
+
+\bibitem[Ref({\natexlab{a}})]{Reference13}
+Volatility.
+\newblock {\natexlab{a}}.
+\newblock URL \url{https://code.google.com/p/volatility/}.
+
+\bibitem[Schneider et~al.(2011)Schneider, Pfoh, and Eckert]{Reference14}
+Christian Schneider, Jonas Pfoh, and Claudia Eckert.
+\newblock A universal semantic bridge for virtual machine introspection.
+\newblock In Sushil Jajodia and Chandan Mazumdar, editors, \emph{Information
+  Systems Security}, volume 7093 of \emph{Lecture Notes in Computer Science},
+  pages 370--373. Springer, 2011.
+
+\bibitem[Schneider et~al.(2012)Schneider, Pfoh, and Eckert]{Reference15}
+Christian Schneider, Jonas Pfoh, and Claudia Eckert.
+\newblock Bridging the semantic gap through static code analysis.
+\newblock In \emph{Proceedings of {EuroSec}'12, 5th European Workshop on System
+  Security}. ACM Press, 2012.
+\newblock URL
+  \url{https://www.sec.in.tum.de/assets/staff/schneider/eurosec_schneider2012.pdf}.
+
+\bibitem[Srivastava and Giffin(2008)]{Reference2}
+Abhinav Srivastava and Jonathon Giffin.
+\newblock Tamper-resistant, application-aware blocking of malicious network
+  connections.
+\newblock In \emph{Proceedings of the 11th International Symposium on Recent
+  Advances in Intrusion Detection}, RAID '08, pages 39--58, Berlin, Heidelberg,
+  2008. Springer-Verlag.
+\newblock ISBN 978-3-540-87402-7.
+\newblock \doi{10.1007/978-3-540-87403-4_3}.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-540-87403-4_3}.
+
+\bibitem[Garfinkel and Rosenblum(2003)]{Reference1}
+Tal Garfinkel and Mendel Rosenblum.
+\newblock A virtual machine introspection based architecture for intrusion
+  detection.
+\newblock In \emph{In Proc. Network and Distributed Systems Security
+  Symposium}, pages 191--206, 2003.
+
+\bibitem[Pfoh et~al.(2009)Pfoh, Schneider, and Eckert]{Reference5}
+Jonas Pfoh, Christian Schneider, and Claudia Eckert.
+\newblock A formal model for virtual machine introspection.
+\newblock In \emph{Proceedings of the 2nd Workshop on Virtual Machine Security
+  (VMSec '09)}, pages 1--10, Chicago, Illinois, USA, nov 2009. ACM Press.
+\newblock \doi{http://doi.acm.org/10.1145/1655148.1655150}.
+\newblock URL
+  \url{https://www.sec.in.tum.de/assets/staff/pfoh/PfohSchneider2009a.pdf}.
+
+\bibitem[Jones et~al.(2006)Jones, Arpaci-dusseau, and
+  Arpaci-dusseau]{Reference4}
+Stephen~T. Jones, Andrea~C. Arpaci-dusseau, and Remzi~H. Arpaci-dusseau.
+\newblock Antfarm: Tracking processes in a virtual machine environment.
+\newblock In \emph{in Proc. of the USENIX Annual Technical Conf}, 2006.
+
+\bibitem[Hizver and Chiueh(2014)]{Reference3}
+Jennia Hizver and Tzi-cker Chiueh.
+\newblock Real-time deep virtual machine introspection and its applications.
+\newblock In \emph{Proceedings of the 10th ACM SIGPLAN/SIGOPS International
+  Conference on Virtual Execution Environments}, VEE '14, pages 3--14, New
+  York, NY, USA, 2014. ACM.
+\newblock ISBN 978-1-4503-2764-0.
+\newblock \doi{10.1145/2576195.2576196}.
+\newblock URL \url{http://doi.acm.org/10.1145/2576195.2576196}.
+
+\bibitem[Pfoh(2013)]{Reference7}
+Jonas Pfoh.
+\newblock Leveraging derivative virtual machine introspection methods for
+  security applications.
+\newblock 2013.
+
+\bibitem[Ref({\natexlab{b}})]{Reference20}
+What is kvm virtualization in linux?
+\newblock
+  \url{http://www.linuxnix.com/2013/02/what-is-kvm-virtualization-in-linux.html},
+  {\natexlab{b}}.
+
+\end{thebibliography}
