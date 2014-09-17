@@ -193,15 +193,15 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Thesis Title} % Your thesis title - this is used in the title and abstract
+\thesistitle{A Deep State-of-The-Art about Mainstream VMI and theirs Manipulation} % Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
-\supervisor{Dr. James \textsc{Smith}} % You supervisor's name - this is used in the title page
+\supervisor{Sylvie \textsc{Laniepce}} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   
 \examiner{} % Your examiner's name - this is not currently used anywhere in the template, cite it with \examname if you want it
 %-------------------------------------------------   
-\degree{Doctor of Philosophy} % Your degree name - this is currently used in the title page and abstract
+\degree{Master of Engineer} % Your degree name - this is currently used in the title page and abstract
 %-------------------------------------------------   
-\authors{John \textsc{Smith}} % Your name - this is used in the title page and abstract
+\authors{Qipeng \textsc{Song}} % Your name - this is used in the title page and abstract
 %-------------------------------------------------   
 \addresses{} % Your address - this is not currently used anywhere in the template, cite it with \addressnames if you want it
 %-------------------------------------------------   
@@ -218,16 +218,16 @@
                 {UNIVERSITY NAME (IN BLOCK CAPITALS)}}
 %-------------------------------------------------                
 \department{\texorpdfstring{\href{Department or School Web Site URL Here (include http://)} % Your department's URL
-                {Department or School Name}} % Your department's name - used in the title page and abstract
-                {Department or School Name}}
+                {Orange Labs. in Caen}} % Your department's name - used in the title page and abstract
+                {Orange Labs. in Caen}}
 %-------------------------------------------------                
 \DEPARTMENT{\texorpdfstring{\href{Department or School Web Site URL Here (include http://)} % Your department's URL
                 {DEPARTMENT OR SCHOOL NAME (IN BLOCK CAPITALS)}} % Your department's name in capitals - this is not currently used anywhere in the template, cite it with \DEPTNAME if you want it
                 {DEPARTMENT OR SCHOOL NAME (IN BLOCK CAPITALS)}}
 %-------------------------------------------------                
 \group{\texorpdfstring{\href{Research Group Web Site URL Here (include http://)} % Your research group's URL
-                {Research Group Name}} % Your research group's name - this is currently used in the title page 
-                {Research Group Name}}
+                {Network and Products Security}} % Your research group's name - this is currently used in the title page 
+                {Network and Products Security}}
 %-------------------------------------------------                
 \GROUP{\texorpdfstring{\href{Research Group Web Site URL Here (include http://)} % Your research group's URL
                 {RESEARCH GROUP NAME (IN BLOCK CAPITALS)}} % Your research group's name in capitals - this is not currently used anywhere in the template, cite it with \GROUPNAME if you want it

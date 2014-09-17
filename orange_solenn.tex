@@ -1,0 +1,175 @@
+\documentclass[11pt,oneside]{book}
+
+\usepackage[utf8]{inputenc} %\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper]{geometry}
+\geometry{hscale=0.78}	% Modification des marges
+\usepackage[french]{babel}
+
+\usepackage{verbatim, graphicx}
+\usepackage[dvipsnames]{xcolor}
+	\definecolor{OrangeLogo}{RGB}{255,102,0} %Parce qu'Orange, ça s'écrit en Orange.
+	
+\usepackage{hyperref} % Pour les liens dans le fichier pdf (tables des matières, références, etc.)
+	\hypersetup{
+  	  colorlinks,
+  	  citecolor=black,
+  	  filecolor=black,
+  	  linkcolor=black,
+  	  urlcolor=black
+	}
+
+\usepackage{algorithm2e} % Pour les algo
+\usepackage{pdfpages} % Pour inclure des .pdf (par exemple pour la page de titre)
+\usepackage{caption} % Pour les légendes, y compris dans des minipages.
+\usepackage{slantsc} % Pour, je sais plus quoi
+\usepackage{bookmark} % Pour ajouter des signets pour les \chapter*{} ou autre, dans le .pdf
+  	
+	  
+\usepackage{titlesec} 
+\titleformat{\chapter}[hang]{\bf\Huge\color{OrangeLogo}}{\thechapter}{2pc}{}	%Supprime le mot Chapitre et l'écrit en orange
+\titlespacing{\chapter}{0pt}{*-5}{*5}						%Diminue l'écart énorme au dessus des chapitres 
+\titleformat*{\section}{\bfseries\Large\color{OrangeLogo}}	% Orange pour les titres des sections
+
+
+
+
+% TITRE (qui ne m'a servi à rien ici, d'ailleurs)
+
+\title {\bf\Huge\color{OrangeLogo}{Techniques d'anonymisation \\ des données}}
+\author{Solenn \bsc{Brunet} - Orange Labs Caen \\ Encadrants : Dominique \bsc{Le Hello} \& Sébastien \bsc{Canard}}
+\date{}
+
+\begin{document}
+
+% FRONT MATTER 
+	\frontmatter
+
+	\begin{titlepage} %Importe la page de titre
+		\includepdf{pageGarde.pdf}
+	\end{titlepage}
+
+	% Pour ajouter pages blanches (utile à l'impression...)
+	%	\newpage
+	%	\strut
+	%	\newpage
+
+	\currentpdfbookmark{Remerciements}{chap:rem} % Ajoute le signet Remerciements dans le .pdf
+	\chapter*{Remerciements} 
+	
+		Tout d'abord, je tiens à remercier vivement mes deux encadrants : Dominique \textsc{Le Hello} et  Sébastien \textsc{Canard}. A travers ce stage, ils m'ont donné l'opportunité de découvrir le monde mystérieux de la recherche en entreprise. Je leur suis très reconnaissante de la confiance et du temps qu'ils m'ont accordés. A leurs côtés, j'ai beaucoup appris sur moi-même et sur le travail de recherche au sein d'une entreprise.
+	
+	\medskip
+	
+	Mes remerciements vont aussi à Thibault \textsc{Creismeas} pour sa disponibilité et son implication dans la partie développement de ce projet.
+	
+	\medskip
+	
+	Je remercie également tous les membres de l'équipe \emph{Network and Products Security} pour leur accueil chaleureux et leur bonne humeur.
+	
+	\medskip
+	
+	Enfin, je n'oublie pas les autres étudiants du ``bureau des stagiaires" pour leur convivialité et leur soutien au quotidien. De même, merci à toutes les personnes qui, de près ou de loin, ont contribué à leur façon au bon déroulement de ce stage.
+	
+
+	% Table des matières
+	
+	\addtocontents{toc}{\vspace*{-0.7\baselineskip}\par}
+	\currentpdfbookmark{Tables des matières}{chap:toc}
+	\tableofcontents
+
+
+	
+	\currentpdfbookmark{Introduction}{chap:intro}
+	\chapter*{Introduction}
+	
+	Dans le cadre de ma deuxième année de Master Mathématiques de l'Information, Cryptographie à l'Université de Rennes 1, j'ai eu l'opportunité de réaliser un stage de six mois au sein d'Orange Labs Caen. Il constitue une part importante de mon cursus tant du point de vue des compétences, du relationnel que de l’intégration dans le monde professionnel.
+	
+	\bigskip
+		
+	Comme la plupart des individus, mon téléphone portable, mon utilisation d'Internet ou encore mes abonnements éventuels dispersent de multiples informations me concernant autour du globe. Bien que souvent impuissante, les mécanismes mis en \oe{}uvre par les entreprises pour les traiter m'ont toujours intriguée. A travers ce stage, j'ai pu découvrir d'un point de vue professionnel une partie des solutions existantes ou encore à l'étude.
+	
+	\bigskip
+	
+	En tant qu’opérateur de télécommunications, Orange est autorisé à stocker des informations personnelles sur les utilisateurs pour des besoins de facturation. Ces données étant très riches les exploiter peut permettre d'extraire des informations utiles. Toutefois, il est évident que les données brutes ne peuvent pas être divulguées : l'anonymisation est une solution à ce problème. Le but de mon stage a été d'étudier des modèles existants d'anonymisation et d'évaluer leurs applications éventuelles aux données d'Orange. Ces modèles permettent de préserver la vie privée des individus et de quantifier l'anonymat assuré. 
+	
+	\bigskip
+	
+	Le travail réalisé s’est avéré très intéressant et très enrichissant pour moi. J'ai dû appréhender de nouvelles notions et parcourir de nombreux articles pour trouver les informations utiles. Grâce à des présentations orales, j'ai pu les partager et discuter sur mes recherches. Pour mener à bien ce stage, j'ai également eu l'opportunité de travailler en binôme ce qui a contribué à éclaircir et faire avancer davantage un projet concret. A travers les tâches réalisées et grâce aux personnes avec lesquelles j'ai pu échanger, j'ai eu un bel aperçu de la profession d'ingénieur R\&D. 
+
+	\bigskip	
+	
+	Ce rapport synthétise le travail que j'ai réalisé du 17 mars au 16 septembre 2014. En premier lieu, il présente l’entreprise et la problématique détaillée du stage. Ensuite, deux chapitres sont consacrés aux modèles étudiés, selon deux approches différentes. Le quatrième chapitre est dédié à leur analyse. Enfin, le dernier chapitre présente les travaux d'adaptation réalisés sur un algorithme d'anonymisation.
+
+	
+% MAINMATTER = corps du rapport
+	\mainmatter
+	
+	\chapter{Contexte du stage}
+
+		\section{Présentation Entreprise}
+			\subsection{Orange et ses Orange Labs}
+			
+			Orange, anciennement France Télécom, est l'opérateur historique de télécommunications en France. Aujourd'hui, c'est un des leaders dans le monde avec un chiffre d'affaires de 40,6 milliards d'euros en 2013. Présent dans une trentaine de pays pour le grand public, le Groupe emploie près de 165~000 salariés dont 62,1\% en France au 31 décembre. Au service de 236 millions de clients, Orange est aujourd'hui un opérateur intégré, fixe, mobile, internet et télévision. La téléphonie mobile comptabilise à elle seule 178,5 millions de clients dans le monde. De plus, 3~000 multinationales sont clientes du service aux entreprises, dans 220 pays.
+						 
+	\begin{figure}[!h]
+		\begin{center}
+			\label{presOrange}
+			\includegraphics[scale=0.5]{presOrange.png}
+			%\includegraphics[width=14cm]{presOrange2.png}
+			\caption{Implantation d'Orange dans le monde en 2013}
+		\end{center}
+		
+	\end{figure}
+
+	Les Orange Labs constituent le réseau mondial de la recherche et de l'innovation du Groupe. Avec 7~482 brevets dont 276 dépôts en 2013, ils contribuent à développer la nouvelle génération de services de communication intégrés, innovants et simples d'utilisation. Le réseau des Orange Labs compte 18 laboratoires sur tous les continents : Chine, Corée du Sud, États-Unis, France, Japon, Pologne, Royaume-Uni et aussi très récemment en Jordanie et en Egypte. 5~000 chercheurs, ingénieurs, techniciens et designers y traitent de nombreuses thématiques. Le budget alloué à la recherche s'élève à 780 millions d'euros, soit 1,9 \% du chiffre d'affaires. 
+			
+	\begin{figure}[!h]
+		\begin{center}
+			\label{FigOrangeLabs}
+			\includegraphics[width=12cm]{OrangeLabs.png}
+			\caption{Répartition des centres de R\&I d'Orange}
+		\end{center}
+	\end{figure}
+
+	
+			\subsection{IMT/OLPS}
+			Plusieurs directions existent au sein de ces Oranges Labs. Plus précisément, la division Innovation, Marketing et Technologies (IMT) concerne les domaines des produits et services, réseaux et systèmes d'informations, marketing mais aussi la distribution, relation et expérience clients, \emph{devices} et recherche. Cette division comprend plusieurs directions dont Orange Labs Products \& Services (OLPS) où j'effectue mon stage. Elle porte la responsabilité globale des produits et services, de la stratégie à la maintenance des solutions mises en \oe{}uvre, dans le monde. Cette entité est à nouveau divisée en plusieurs directions dont Architecture Securité Enablers (ASE). Cette direction a trois missions principales. Celle qui nous concerne est l'expertise en sécurité. En effet, elle contient le département Sécurité (SEC) qui s'intéresse à différentes thématiques : la sécurité des infrastructures et des services, la veille et l'expertise des domaines tels que la vie privée, la cryptographie et la normalisation.
+	
+	\medskip	
+		
+	Plus précisément, je suis intégrée à l'équipe \emph{Network and Product Security} qui traite des sujets variés tels que la cryptographie, la protection des données personnelles, la sécurité du Cloud et la détection d'intrusions afin de maintenir un haut niveau d'expertise. Cette équipe est centralisée sur le site d'Orange Labs Caen et compte 20 personnes : 13 permanents (chefs de projet, ingénieurs, etc.), quatre doctorants, un post-doctorant et deux apprentis. De plus, elle accueille actuellement cinq stagiaires. J'y suis encadrée par Dominique \bsc{Le Hello} (chef de projet) et Sébastien \bsc{Canard} (ingénieur R\&D en sécurité des services et des réseaux). 
+	
+		\newpage
+		\section{Enjeux de l'anonymisation}
+			Blabla
+			
+	\chapter{Corps du texte 1}
+	
+	\chapter{Corps du texte 2}
+
+
+\bookmarksetup{startatroot} 
+	\chapter*{Conclusion} \currentpdfbookmark{Conclusion}{chap:ccl} % Ajout du signet Conclusion
+	
+		L'anonymisation des données est un domaine particulièrement délicat. Par sa définition -- à savoir de supprimer le lien entre les individus et les données qui les concernent -- elle offre une solution prometteuse pour permettre à des acteurs du marché, comme Orange, de valoriser leurs données. En effet, leur étude peut conduire à des aménagements de territoires, des optimisations de certains services, etc. Pourtant, une anonymisation qui se révèle finalement insuffisante entraîne de lourdes conséquences en portant atteinte à la vie privée des individus.
+		
+		\medskip
+		
+		A travers ce rapport, nous avons pu voir que l'anonymisation est un sujet de recherche actif. Des défauts ont été mis en avant sur les modèles classiques étudiés. Aujourd'hui, il semble ne pas exister de solution pour satisfaire avec certitude les contraintes de l'anonymisation à des fins de publication. Toutefois, l'outil étudié en profondeur durant ce stage pourra peut-être donner naissance à un logiciel d'anonymisation interne plus complet permettant de réaliser les premiers tests à réaliser dans ce type de projet.
+		
+		\bigskip 
+		
+		D'un point de vue plus personnel, ce stage m'a permis de développer des compétences dans un domaine dont je n'avais auparavant qu'une vision très lointaine. Les études menées m'ont permis de prendre davantage confiance en moi et de développer ma capacité à avoir un regard plus critique. J'ai été très sensible à la confiance et l'autonomie qui m'ont été accordées, dès le début. Cela m'a poussé à faire des choix et à me poser ainsi de nombreuses questions. Au sein de cette équipe de recherche pluridisciplinaire, j'ai vécu une expérience très enrichissante, tant sur le plan humain que professionnel, qui m'a fait également découvrir d'autres domaines.
+		
+	\bibliography{biblio}
+	\bibliographystyle{unsrt}
+	
+% ANNEXES 
+
+	\appendix
+	
+	\chapter{Interfaces ARX}
+	
+
+\end{document}

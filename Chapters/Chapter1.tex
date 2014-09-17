@@ -10,9 +10,11 @@
 Virtual machine Introspection, also known as VMI, is an emerging technology largely used in virtual data center in recent years, 
 for the purpose of building a wide range of agentless VM monitored applications such as intrusion detection system \cite{Reference1}, 
 virtual firewall \cite{Reference2}, etc. According to Pfoh \cite{Reference5}, there exist three patterns to help build VMI applications
-: in-band pattern, out-of-pattern and derivative pattern. In-band pattern needs an agent installed in monitored guest, thus it is not our 
-investigation focus. Out-of-band is the most popular VMI approach but with some problems of portability.    Derivative pattern, relying on 
-hardware architecture information (MMU state, control registers in vCPU, etc.) to infer guest running state, presents a better portability 
-feature and there is no much work in this field. Based on this classification, I suggest adding a new one: reutilization pattern, because 
-recent advance shows that the semantic gap could be largely narrowed by reusing the exercised code from a trusted OS kernel. We plan to make 
-a full state-of-the-art for currently existing VMI technologies. This article is aimed to record all the exploration process in this road.
+: in-band pattern, out-of-band pattern(used interchangably with term delivery pattern) and derivative pattern. In-band pattern needs an
+agent installed in monitored guest, thus it is not our investigation focus. Out-of-band is the most popular VMI approach but with some 
+problems of portability. Derivative pattern, relying on hardware architecture information (MMU state, control registers in vCPU, etc.) 
+to infer guest running state, presents a better portability feature and there is no much work in this field. However, as the development
+in this research field, this classification is not complete to cover all existing VMI technologies. Based on Phof's classification,
+I suggest adding a new one: reutilization pattern, because recent advance shows that the semantic gap could be largely narrowed by 
+reusing the exercised code from a trusted OS kernel. We plan to make a full and deep state-of-the-art for currently existing VMI 
+technologies. This article is aimed to record all the exploration process in this road.
