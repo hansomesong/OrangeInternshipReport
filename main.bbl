@@ -1,4 +1,4 @@
-\begin{thebibliography}{30}
+\begin{thebibliography}{35}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -116,6 +116,12 @@ Brendan Dolan-Gavitt, Tim Leek, Michael Zhivich, Jonathon Giffin, and Wenke
 \newblock \emph{2013 IEEE Symposium on Security and Privacy}, 0:\penalty0
   297--312, 2011.
 
+\bibitem[Fu and Lin(2013)]{Reference29}
+Yangchun Fu and Zhiqiang Lin.
+\newblock Exterior: Using a dual-vm based external shell for guest-os
+  introspection, configuration, and recovery.
+\newblock \emph{SIGPLAN Not.}, 48\penalty0 (7):\penalty0 97--110, mar 2013.
+
 \bibitem[Gu et~al.(2012)Gu, Fu, Prakash, Lin, and Yin]{Reference30}
 Yufei Gu, Yangchun Fu, Aravind Prakash, Zhiqiang Lin, and Heng Yin.
 \newblock Os-sommelier: Memory-only operating system fingerprinting in the
@@ -136,28 +142,52 @@ Zhongshu Gu, Zhui Deng, Dongyan Xu, and Xuxian Jiang.
   virtualization.
 \newblock pages 147--156. IEEE, 2011.
 
-\bibitem[Ref({\natexlab{c}})]{Reference21}
-Ebtables community developers, {\natexlab{c}}.
+\bibitem[Wang et~al.(2009)Wang, Jiang, Cui, and Ning]{Reference38}
+Zhi Wang, Xuxian Jiang, Weidong Cui, and Peng Ning.
+\newblock Countering kernel rootkits with lightweight hook protection.
+\newblock In \emph{Proceedings of the 16th ACM Conference on Computer and
+  Communications Security}, pages 545--554, New York, NY, USA, 2009.
+
+\bibitem[Rhee et~al.(2009)Rhee, Riley, Xu, and Jiang]{Reference39}
+Junghwan Rhee, Ryan Riley, Dongyan Xu, and Xuxian Jiang.
+\newblock Defeating dynamic data kernel rootkit attacks via vmm-based
+  guest-transparent monitoring.
+\newblock In \emph{Proceedings of the International Conference on Availability,
+  Reliability and Security (ARES 2009)}, Fukuoka, Japan, March 2009.
+
+\bibitem[Litty and Lie(2006)]{Reference40}
+Lionel Litty and David Lie.
+\newblock Manitou: A layer-below approach to fighting malware.
+\newblock In \emph{In Proceedings of the Workshop on Architectural and System
+  Support for Improving Software Dependability (ASID}, pages 6--11, 2006.
+
+\bibitem[Ref({\natexlab{c}})]{Reference16}
+Insight-vmi.
+\newblock {\natexlab{c}}.
+\newblock URL \url{https://code.google.com/p/insight-vmi/}.
+
+\bibitem[Ref({\natexlab{d}})]{Reference21}
+Ebtables community developers, {\natexlab{d}}.
 \newblock URL \url{http://ebtables.sourceforge.net/}.
 
-\bibitem[Ref({\natexlab{d}})]{Reference23}
+\bibitem[Ref({\natexlab{e}})]{Reference23}
 Libvirt community developers.
-\newblock {\natexlab{d}}.
+\newblock {\natexlab{e}}.
 \newblock URL \url{http://libvirt.org/goals.html}.
 
-\bibitem[Ref({\natexlab{e}})]{Reference25}
+\bibitem[Ref({\natexlab{f}})]{Reference25}
 Libvirt wikipedia.
-\newblock {\natexlab{e}}.
+\newblock {\natexlab{f}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/Libvirt}.
 
-\bibitem[Ref({\natexlab{f}})]{Reference24}
+\bibitem[Ref({\natexlab{g}})]{Reference24}
 Qemu networking.
-\newblock {\natexlab{f}}.
+\newblock {\natexlab{g}}.
 \newblock URL \url{http://wiki.qemu.org/Documentation/Networking}.
 
-\bibitem[Ref({\natexlab{g}})]{Reference19}
+\bibitem[Ref({\natexlab{h}})]{Reference19}
 Virtual networking.
-\newblock {\natexlab{g}}.
+\newblock {\natexlab{h}}.
 \newblock URL
   \url{https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Virtualization_Administration_Guide/chap-Virtualization_Administration_Guide-Virtual_Networking.html}.
 
@@ -170,25 +200,25 @@ Jonas Pfoh, Christian Schneider, and Claudia Eckert.
   pages 166--175, Venice, Italy, 2010. IEEE Computer Society.
 \newblock URL \url{http://www.sec.in.tum.de/assets/Uploads/securware2010.pdf}.
 
-\bibitem[Ref({\natexlab{h}})]{Reference33}
+\bibitem[Ref({\natexlab{i}})]{Reference33}
 Leveraging forensic tools for virtual machine introspectionm.
-\newblock {\natexlab{h}}.
+\newblock {\natexlab{i}}.
 \newblock URL
   \url{https://smartech.gatech.edu/bitstream/handle/1853/38424/GT-CS-11-05.pdf}.
 \newblock Tech.Report.
 
-\bibitem[Ref({\natexlab{i}})]{Reference34}
+\bibitem[Ref({\natexlab{j}})]{Reference34}
 Memory analysis.
-\newblock {\natexlab{i}}.
+\newblock {\natexlab{j}}.
 \newblock URL \url{http://www.forensicswiki.org/wiki/Memory_analysis}.
 
-\bibitem[Ref({\natexlab{j}})]{Reference35}
-Linuxmemoryforensics, {\natexlab{j}}.
+\bibitem[Ref({\natexlab{k}})]{Reference35}
+Linuxmemoryforensics, {\natexlab{k}}.
 \newblock URL
   \url{https://code.google.com/p/volatility/wiki/LinuxMemoryForensics}.
 
-\bibitem[Ref({\natexlab{k}})]{Reference36}
-Volatility, {\natexlab{k}}.
+\bibitem[Ref({\natexlab{l}})]{Reference36}
+Volatility, {\natexlab{l}}.
 \newblock URL
   \url{https://code.google.com/p/volatility/wiki/LinuxCommandReference23#linux_vma_cache}.
 
