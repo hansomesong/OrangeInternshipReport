@@ -212,8 +212,10 @@ Once this is done, run kvm-ok to verify:
 \end{figure}
 
 Then we begin to install required packages for KVM. The command to install everything you need is:
-\shellcmd{ sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils}
-\shellcmd{ sudo apt-get install virt-manager virtinst qemu-system}
+\shellcmd{ 
+  sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils \\
+  \#		sudo apt-get install virt-manager virtinst qemu-system
+}
 Out of interest, KVM doesn’t have its own configuration directory. The configuration files could be found in: /etc/libvirt/qemu/
 There are some quirks or confusions which deserve clarify, in term of difference and association between libvirt, 
 qemu, qemu-kvm. Qemu in fact is project independent of KVM, it is an emulator which itself could be used as a virtualization 

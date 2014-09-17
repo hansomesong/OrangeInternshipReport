@@ -1,20 +1,20 @@
 % Chapter Template
 
-\chapter{LibVMI\&Volatility manipulation} % Main chapter title
+\chapter{LibVMI\&Volatility Manipulation} % Main chapter title
 
 \label{Chapter7} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\lhead{Chapter 7. \emph{LibVMI\&Volatility manipulation}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
+\lhead{Chapter 7. \emph{LibVMI\&Volatility Manipulation}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
 %	SECTION 1
 %----------------------------------------------------------------------------------------
 
-\section{introduction}
-Recall that the objective of this internship derives from a predication made by Pfoh in his doctoral thesis in chapter 6 Derivative Method [7]: 
+\section{INTRODCTION}
+Recall that the objective of this internship derives from a predication made by Pfoh in his doctoral thesis in chapter 6 Derivative Method \cite{Reference7}: 
 These methods (Derivative method) allow one to track network connections on a per-process basis in a completely guest operating system agnostic manner.
 
-Frankly, a Virtual Machine Introspection application VMWall [2] has implemented almost the similar functionality. 
+Frankly, a Virtual Machine Introspection application VMWall \cite{Reference2} has implemented almost the similar functionality. 
 However, VMWall’s implementation is based on delivery pattern, also known as out-of-band manner, 
 thus it has a narrow set of operating system support and requires some preliminary configuration files to work. 
 All above characteristics hinder wide application of this kind of VMI application. Therefore, what Pfoh has declared actually 
@@ -49,10 +49,15 @@ structure). Thirdly, we could try to firstly implement a network connection moni
 inspiration for a derivative method implementation. In addition, this delivery method implementation could be used as a 
 reference for future derivative method implementation.
 
-During the searching online, I have noticed that currently leveraging forensic memory analysis tools, also known as FMA, is a popular tendency in Virtual Machine Introspection application development [33]. The remains of this section is aimed to record the exploration of how to leverage FMA tool such as Volatility with VMI tools such as LibVMI for running virtual machine.
+During the searching online, I have noticed that currently leveraging forensic memory analysis tools, also known as FMA, is 
+a popular tendency in Virtual Machine Introspection application development \cite{Reference33}. The remains of this section is 
+aimed to record the exploration of how to leverage FMA tool such as Volatility with VMI tools such as LibVMI for running virtual 
+machine.
 
 \section{FORENSIC MEMORY ANALYSIS TOOL}
-Forensic Memory Analysis is the science of using a memory image to determine information about running programs, the operating system, and the overall state of a computer [34]. Because the analysis is highly dependent on the operating system, it has been divided into the following categories:
+Forensic Memory Analysis is the science of using a memory image to determine information about running programs, the operating system
+, and the overall state of a computer \cite{Reference34}. Because the analysis is highly dependent on the operating system, it has 
+been divided into the following categories:
 \begin{itemize}
     \item Linux Memory Analysis
     \item Mac OS X Memory Analysis
@@ -63,12 +68,17 @@ forensically relevant information from dumps of physical memory. The only differ
 semantic gap lies in that VMI is used to monitor a running guest’s memory (dynamic file) while FMA initially is used to 
 analyze memory dump file (static file). Figure \ref{fig:Comparison of VMI and FMA} shows the relationship between FMA and VMI.
 
-Up to now, FMA community has made plenty achievements to mitigate semantic gap. Many excellent FMA tools, such as Volatility framework, are available. The following figure shows the comparison between the famous VMI tool LibVMI and Volatility. Since after many years developments, Volatility has a wide set of memory analysis support, from Android to Mac, from Linux to Windows. Hence, leveraging this characteristic, it is possible to create an OS-agnostic VMI application, if we have some approaches to make Volatility treat virtual machine’s memory as a recognizable file. Fortunately, LibVMI, a VMI framework based on out-of-band method, has developed a python-wrapper which allows Volatility functioning for a running guest.
+Up to now, FMA community has made plenty achievements to mitigate semantic gap. Many excellent FMA tools, such as Volatility framework, 
+are available. The following figure shows the comparison between the famous VMI tool LibVMI and Volatility. Since after many years 
+developments, Volatility has a wide set of memory analysis support, from Android to Mac, from Linux to Windows. Hence, leveraging this 
+characteristic, it is possible to create an OS-agnostic VMI application, if we have some approaches to make Volatility treat virtual 
+machine’s memory as a recognizable file. Fortunately, LibVMI, a VMI framework based on out-of-band method, has developed a python-wrapper
+which allows Volatility functioning for a running guest.
 
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=14cm, height= 8cm ]{Figures/Figure20.png}
-	\caption[Comparison of VMI and FMA]{Comparison of VMI and FMA}
+	\caption[Comparison of VMI and FMA]{Comparison of VMI and FMA \cite{Reference3}}
 	\label{fig:Comparison of VMI and FMA}
 \end{figure}
 
@@ -85,43 +95,58 @@ VM physical memory access code and install these utilities from source code.
 
 To get libvirt source code, open a terminal and change into your destination directory (in our case, we plan to arrange 
 all source codes required under a directory called "libvmi") and issue this command in a terminal:
-\shellcmd{mkdir ~/libvmi}
-\shellcmd{cd ~/libvmi}
-\shellcmd{wget http://libvirt.org/sources/libvirt-1.2.6.tar.gz}
-\shellcmd{tar zxvf libvirt-1.2.6.tar.gz}
-\shellcmd{cd libvirt-1.2.6}
+\shellcmd{
+		mkdir ~/libvmi \\
+\#		cd ~/libvmi \\
+\#		wget http://libvirt.org/sources/libvirt-1.2.6.tar.gz \\
+\#		tar zxvf libvirt-1.2.6.tar.gz \\
+\#		cd libvirt-1.2.6
+}
 When compiling and installing libvirt from source code, notice that an older version (version 1.2.2) has been already 
 installed under path /usr/bin, to avoid any possible confusion, we need to update libvirt by overriding the old one:
-\shellcmd{./autogen.sh}
-\shellcmd{./configure --prefix=/usr --localstatedir=/var --sysconfdir=/etc}
-\shellcmd{make}
-\shellcmd{sudo make install}
-\shellcmd{sudo ldconfig}
+\shellcmd{
+		./autogen.sh \\
+\#		./configure --prefix=/usr --localstatedir=/var --sysconfdir=/etc \\
+\#		make \\
+\#		sudo make install\\
+\#		sudo ldconfig
+}
 Then, do not forget to modify libvirt configuration file and restart libvrit daemon. Modify /etc/libvirt/libvirtd.conf, uncomment this line:
 \shellcmd{auth\_unix\_rw = “none”}
 To restart libvirtd, type the following commands:
-\shellcmd{sudo /etc/init.d/libvirt-bin stop}
-\shellcmd{sudo /etc/init.d/libvirt-bin start}
+\shellcmd{
+			sudo /etc/init.d/libvirt-bin stop \\
+\#			sudo /etc/init.d/libvirt-bin start			
+}
 In term of QEMU, we need to firstly know why and how to modify its source code. What the patch actually does is to use 
 Qemu Machine Protocol (QMP) mechanism for LibVMI to pass the GPA (Guest Physical Address), and call the internal function 
-``cpu\_physical\_memory\_map'' located in qemu/exec.c in Qemu, and finally get the mapped HVA (Host Virtual Address) back. More details about how to write a patch for a certain version of QEMU are available in this link: http://ytliu.info/blog/2014/03/27/kvm-support-in-libvmi
-
-Given that a QEMU patch for QEMU 1.6 is provided, we use git to clone branch 1.6 version of QEMU:
-\shellcmd{mkdir ~/libvmi/qemu-stable-1.6}
-\shellcmd{cd qemu-stable-1.6}
-\shellcmd{git init}
-\shellcmd{git remote add -t stable-1.6 -f origin https://github.com/qemu/qemu.git}
-\shellcmd{git checkout stable-1.6}
+"cpu\_physical\_memory\_map" located in qemu/exec.c in Qemu, and finally get the mapped HVA (Host Virtual Address) back. 
+More details about how to write a patch for a certain version of QEMU are available in this link:
+\url{http://ytliu.info/blog/2014/03/27/kvm-support-in-libvmi}. Given that a QEMU patch for QEMU 1.6 is provided, we use git
+to clone branch 1.6 version of QEMU:
+\shellcmd{
+mkdir ~/libvmi/qemu-stable-1.6 \\
+\#\indent\indent\texttt{cd qemu-stable-1.6} \\
+\#\indent\indent\texttt{git init} \\
+\#\indent\indent\texttt{git remote add -t state-1.6 -f origin https://github.com/qemu/qemu.git} \\
+\#\indent\indent\texttt{git checkout stable-1.6}
+}
 Supposing that the path of patch file for QEMU 1.6 is ~/libvmi/kvm-1.6-patch.patch, to patch QEMU, issue this command:
-\shellcmd{patch -p1 < ../kvm-1.6-patch.patch}
-\shellcmd{./configure --prefix=/usr --target-list=''386-softmmu x86\_64-softmmu''}
+\shellcmd{
+		patch -p1 < ../kvm-1.6-patch.patch \\
+\#		./configure --prefix=/usr --target-list="386-softmmu x86\_64-softmmu"		
+}
 By default (without –target-list option), ‘configure’ will prepare many machine type emulator, and it takes long time to compile.
-\shellcmd{make}
-\shellcmd{sudo make install}
+\shellcmd{
+		make \\
+\#		sudo make install
+}
 In addition, to assure the functioning of LibVMI, all the following additional packages are required to be installed:
-\shellcmd{sudo apt-get install zlib1g-dev libglib2.0-dev libpixman-1-dev libfdt-dev libtool libsdl1.2-dev}
-\shellcmd{sudo apt-get install libbison-dev flex libyajl-dev check autopoint python-dev libxslt1-dev xsltproc}
-\shellcmd{sudo apt-get install libdevmapper-dev libpciaccess-dev libnl-dev w3c-dtd-xhtml libjansson-dev libfuse-dev}
+\shellcmd{
+sudo apt-get install zlib1g-dev libglib2.0-dev libpixman-1-dev libfdt-dev libtool libsdl1.2-dev \\
+\#		sudo apt-get install libbison-dev flex libyajl-dev check autopoint python-dev libxslt1-dev xsltproc \\
+\#		sudo apt-get install libdevmapper-dev libpciaccess-dev libnl-dev w3c-dtd-xhtml libjansson-dev libfuse-dev \\
+}
 Now all prerequisites works are done to install LibVMI. To get its source code, type this command:
 \shellcmd{cd ~/libvmi}
 \shellcmd{git clone git://github.com/bdpayne/libvmi.git}
@@ -204,9 +229,11 @@ Now it’s time to get Volatility.
 
 In term of installing Volatility's code, we have two choices, each has its own advantages and disadvantages.
 
-1) Extract the archive and run setup.py. This way is useful when we want to import Volatility as module in Python script, however, it is not convenient for upgrading or uninstalling.
+1) Extract the archive and run setup.py. This way is useful when we want to import Volatility as module in Python script, however, it is not convenient for upgrading or uninstalling.
 
-2) Extract the archive to a directory of your choice. When you want to use Volatility just do python /path/to/directory/vol.py. This is a cleaner method since no files are ever moved outside of your chosen directory, which is convenient for possible update of Volatility in the future. The cost is that Volatility could not be used as a library in Python script.
+
+2) Extract the archive to a directory of your choice. When you want to use Volatility just do python /path/to/directory/vol.py. This is a cleaner method since no files are ever moved outside of your chosen directory, which is convenient for possible update of Volatility in the future. The cost is that Volatility could not be used as a library in Python script.
+
 
 For our case, we choose to run setup.py for the purpose of using Volatility as a module. Now we manage to install LibVMI and Volatility in our KVM experimentation platform. The following section will talk about my manipulation.
 
@@ -226,7 +253,7 @@ volatility commands are constructed as shown below:
 \shellcmd{python path/to/vol.py [plugin] -f [image] --profile=[profile]}
 Placeholder [plugin] in above command line represents the functionality provided by Volatility. For example “pslist” plugin allows listing all 
 currently running processes. [image] means the path to the target memory dump. It could be in various types depending supported address 
-space, such as raw dd style format or LiME [35] format for Linux. [profile] indicates which memory layout or kernel data structure will 
+space, such as raw dd style format or LiME \cite{Reference35} format for Linux. [profile] indicates which memory layout or kernel data structure will 
 be used to investigate input memory sample file. One reason why Volatility is so useful and popular is due to complete and predefined 
 profile for Windows.
 
@@ -238,7 +265,8 @@ The following command is used to achieve this:
 \shellcmd{sudo python vol.py netscan -f /path/to/win7.dd –profile=Win7SP1x86}
 For everything beyond this example, such as controlling the output format, listing the available plugins and profiles, or supplying 
 plugin-specific options, see the rest of the text below. https://code.google.com/p/volatility/wiki/VolatilityUsage23
-
+
+
 \subsection{Plugin}
 As mentioned above, the functionalities of Volatility are in implemented in form of plugin and could be extended. Initially, 
 Volatility is used uniquely for Windows memory analysis, thus it provides up to now variety of plugins for Windows. This plugins could 
@@ -247,7 +275,7 @@ be grouped into the those categories shown in Figure \ref{fig:Windows Core Plugi
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=14cm, height= 10cm ]{Figures/Figure23.png}
-	\caption[Windows Core Plugin List]{Windows Core Plugin List}
+	\caption[Windows Core Plugin List]{Windows Core Plugin List \cite{Reference13}}
 	\label{fig:Windows Core Plugin List}
 \end{figure}
 
@@ -257,7 +285,7 @@ machine if we have its memory sample file.
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=14cm, height= 10cm ]{Figures/Figure24.png}
-	\caption[Windows GUI and Malware Plugins List]{Windows GUI and Malware Plugins List}
+	\caption[Windows GUI and Malware Plugins List]{Windows GUI and Malware Plugins List \cite{Reference13}}
 	\label{fig:Windows GUI and Malware Plugins List}
 \end{figure}
 
@@ -269,7 +297,7 @@ In term of Linux, available plugins are resumed in Figure \ref{fig:Linux Memory 
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=14cm, height= 10cm ]{Figures/Figure25.png}
-	\caption[Linux Memory Forensic Plugin]{Linux Memory Forensic Plugin}
+	\caption[Linux Memory Forensic Plugin]{Linux Memory Forensic Plugin \cite{Reference36}}
 	\label{fig:Linux Memory Forensic Plugin}
 \end{figure}
 
@@ -332,7 +360,7 @@ Volatility 2.3: volatility/plugins/addrspaces/.
 Volatility is designed to work on forensic memory snapshots. In this mode, a forensic analyst would take a physical memory image from
 a target machine, and then use Volatility to extract useful information from that image. However, since Volatility already contains 
 significant information on the Windows/Linux memory layout and because Volatility greatly simplifies the development of memory analysis 
-tools, LibVMI development team tried to integrate Volatility with LibVMI to facilitate analysis on a running virtual machine [8]. Thanks
+tools, LibVMI development team tried to integrate Volatility with LibVMI to facilitate analysis on a running virtual machine \cite{Reference8}. Thanks
 to their great job, now a “VMI application-LibVMI-Volatility” tool chain has been established to simplify the development of VMI application.
 In this section, we talk about how they make Volatility work directly on a live virtual machine.
 
@@ -343,7 +371,8 @@ Volatility framework. Their effort has formed the software stack shown in Figure
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=14cm, height= 7cm ]{Figures/Figure29.png}
-	\caption[Software stack with PyVMI wrapper on top of the C language LibVMI library]{Software stack with PyVMI wrapper on top of the C language LibVMI library}
+	\caption[Software stack with PyVMI wrapper on top of the C language LibVMI library]
+	{Software stack with PyVMI wrapper on top of the C language LibVMI library \cite{Reference6}}
 	\label{fig:Software stack with PyVMI wrapper on top of the C language LibVMI library}
 \end{figure}
 
@@ -366,7 +395,7 @@ recommended compared to its alternative.
 \begin{figure}[htbp]
 	\centering
 		\includegraphics[width=14cm, height= 9cm ]{Figures/Figure30.png}
-	\caption[Software stack with Volatility address space plugin]{Software stack with Volatility address space plugin}
+	\caption[Software stack with Volatility address space plugin]{Software stack with Volatility address space plugin \cite{Reference6}}
 	\label{fig:Software stack with Volatility address space plugin}
 \end{figure}
 
@@ -379,7 +408,23 @@ Still take our Windows guest “win7\_32bit” as example. After above invocatio
 \shellcmd{sudo python path/to/vol/py pslist -f /tmp/win7\_32bit/mem --profile=Win7SP1x86}
 Different with pyvmi address space plugin, the simple Python script works well and poses none problem.
 
+\section{Experimentation Result}
+With LibVMI+pyvmifs.py+volatility, we could run all interesting plugins for our KVM Windows/Linux virtual machines. 
+Figure shows the resume of execution of under Windows 7 x86/64 and Ubuntu 10.04 x86.
 
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=14cm, height= 9cm ]{Figures/Figure31.png}
+	\caption[Experimentation Result of Volatility Plugins in KVM Platform]{Experimentation Result of Volatility Plugins in KVM Platform}
+	\label{fig:Experimentation Result of Volatility Plugins in KVM Platform}
+\end{figure}
+
+7.7Limit of Volatility\&LibVMI
+
+Although Volatility presents various advantages in memory forensic analysis domain, its disadvantages are still obvious in the context 
+of Virtual Machine Introspection: Volatility is applied uniquely to memory analysis, whereas Virtual Machine Introspection could also 
+cover introspection on virtual CPU or virtual disk. Fortunately, LibVMI and libguestfs \cite{Reference38} could come to cover this shortage. 
+LibVMI allows monitoring the running state of vCPU and libguestfs library is able to access and modify virtual machine’s disk image. 
 
 
 

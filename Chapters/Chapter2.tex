@@ -276,17 +276,39 @@ team at the Technische Universität München in Germany. Detailed information is
       \centering	% Used for centering table
       \caption{VMI Tool Manifest}
       \label{tab: VMI Tool Manifest}      
-      \begin{tabular}{| p{3cm} |p{2cm} | p{2cm} |p{6cm}|}
+      \begin{tabular}{| p{2cm} |p{1.5cm} | p{1.5cm} |p{6cm}|}
       \hline
       VMI Tool & Hypervisor & Open-Source & Features \\ 
       \hline
-      LibVMI/XenAccess \cite{Reference6} & KVM, Xen & \url{https://code.google.com/p/vmitools} & It uses the paging mechanism of x86 processors from Intel and AMD to perform integrity checks 
-      on code pages before execution\\ 
+      LibVMI \cite{Reference6} & KVM, Xen & \url{https://code.google.com/p/vmitools} &
+	  \begin{itemize}
+	   \item Works with 32-bit and 64-bit Windows and Linux guests (64-bit support in version 0.8 and newer)
+	   \item Works with physical memory snapshots saved in a file (e.g., VMWare snapshots)
+	   \item Pause/unpause the VM through an API function
+	   \item Volatility address space plugin enabled running Volatility on a live VM
+	  \end{itemize}
+      \\ 
       \hline
-      Volatility \cite{Reference36} & KVM,Xen & \url{https://code.google.com/p/volatility}  & It makes use of the paging mechanism and the memory management unit(MMU) 
-      in x86 and SPARC hardware architecture to identify running process\\
+      Volatility \cite{Reference36} & KVM,Xen & \url{https://code.google.com/p/volatility}  & 
+	  \begin{itemize}
+	   \item supports forensic analysis of the Windows,Linux,Mac OS memory images
+	   \item Does not provide memory sample acquisition
+	   \item Supports a variety of sample file formats
+	  \end{itemize}
+
+      \\
       \hline
-      Insight-VMI \cite{Reference16} & KVM,Xen & \url{https://code.google.com/p/insight-vmi} & Lycosid is capable of detecting and identifying those hidden process on the basis of AntFarm\\
+      Insight-VMI \cite{Reference16} & KVM,Xen & \url{https://code.google.com/p/insight-vmi} & 
+	  \begin{itemize}
+	   \item Analysis of physical memory dumps or live physical memory of a virtual machine
+	   \item Support for 32-bit and 64-bit addressing schemes with and without PAE
+	   \item Re-creation of kernel objects for the Linux kernel
+	   \item Automatic de-referencing of pointers to futher objects
+	   \item Application of type casts and pointer arithmetic as the kernel would do
+	   \item An interactive shell for manual analysis of kernel objects
+	   \item A JavaScript engine for automated analysis of repeating or complex task
+	  \end{itemize}
+      \\
       \hline
       \end{tabular}
 \end{table*}

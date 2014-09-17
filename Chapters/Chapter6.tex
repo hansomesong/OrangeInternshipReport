@@ -12,7 +12,9 @@
 
 \section{Installation of Nitro}
 
-Pfoh has created a website, http://nitro.pfoh.net/setup.html, where he gives a general introduction about Nitro’s setup. To reduce the length of this report, it’s advised to carefully follow Pfoh’s tutorial when installing Nitro. Here we just provide some extra explanations and complements on the basis of his initial tutorial. Remember Nitro consists of three components:
+Pfoh has created a website, \url{http://nitro.pfoh.net/setup.html}, where he gives a general introduction about Nitro’s setup. To reduce the length of this 
+report, it’s advised to carefully follow Pfoh’s tutorial when installing Nitro. Here we just provide some extra explanations and complements on the basis 
+of his initial tutorial. Remember that Nitro consists of three components:
 \begin{itemize}
     \item Kernel Modules - This component is a fork of KVM. It has been extended to provide additional IOCTL calls that can be leveraged to perform VMI.
     \item QEMU - This is a fork of QEMU, the component that provides the user land support for KVM. It is only slightly modified such that it exposes direct access to the guest's physical memory, which Nitro can take advantage of.
@@ -27,7 +29,7 @@ Pfoh has created a website, http://nitro.pfoh.net/setup.html, where he gives a g
 
 To use Nitro, some preliminary work is necessary, including replace initial KVM modules by a modified one for Nitro, 
 mount a huge pages type device under /tmp directory and finally increase the number of huge pages available to your system. 
-If you are not familiar with huge pages, this tutorial is a good start point: https://wiki.debian.org/Hugepages. 
+If you are not familiar with huge pages, this tutorial is a good start point: \url{https://wiki.debian.org/Hugepages}. 
 To automate this work, we have written a bash shell script named “load\_mods”, which is located in the root of working directory (/home/cloud/load\_mods). 
 If not precise, all script files for Nitro are in the same location. 
 
@@ -40,7 +42,8 @@ It is recommended to use a bash script to automate this work. For example, to st
 we write a script named “win7start”.
 
 Finally, it’s time to launch Nitro to monitor the already running VM. We have also a script “NitroStart” for this work. 
-Note that Nitro command syntax is “./Nitro PID GUEST\_RAM\_FILE”. Figure \ref{fig:Truncated output of Nitro for a Win7 64bit VM} shows a part of output of Nitro.
+Note that Nitro command syntax is “./Nitro PID GUEST\_RAM\_FILE”. Figure \ref{fig:Truncated output of Nitro for a Win7 64bit VM} shows a part of output 
+of Nitro.
 
 \begin{figure}[htbp]
 	\centering
@@ -59,15 +62,15 @@ related system call service routine. Column “cr3” save the CR3 register’s 
 indicates the system call code for windows 64 bits operating system. For example, a value “AA” in RAX means a system call 
 “NtCreateUserProcess” in windows 7. In fact, in the prototype implementation provided by Pfoh, the type of system call desired is 
 hard coded in file “nitro\_main.c”. Nitro captures only those system calls that users require.  
-For more information about windows 64 bits system call table, please refer to this link: http://j00ru.vexillium.org/ntapi\_64/.
+For more information about windows 64 bits system call table, please refer to this link: \url{http://j00ru.vexillium.org/ntapi\_64/}.
 
 \section{Assessment of Nitro}
 As far as I know, Nitro is actually the first and only VMI application in derivative manner under KVM virtualization platform. 
 Though VMI in derivative mode is perfectly against circumstance technique, the amount of information obtained is rather limited, 
 due to the fact that derivation method principally just concerns and observes hardware-related running state (such as CR3 register, etc.)
 \cite{Reference17}. Nitro, as a typical implementation under the guide of derivation method, is no different. Currently, Nitro is just able to access vCPU 
-registers and trap system calls of type “syscall/sysret” (In fact, system call is possible to be invoked in other manners such as assembly instruction int 0x80.), 
-even though Pfoh promises to enrich Nitro’s functionality list in his spare time.
+registers and trap system calls of type “syscall/sysret” (In fact, system call is possible to be invoked in other manners such as assembly instruction int 
+0x80.), even though Pfoh promises to enrich Nitro’s functionality list in his spare time.
 
 Just as Pfoh has stated in his project website, Nitro at present has a relatively limited suit of functionalities compared with 
 those VMI tools like LibVMI in out-of-band. Concretely, it presents the following limitations:

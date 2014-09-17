@@ -12,6 +12,7 @@ Warning--empty year in Reference13
 Warning--empty year in Reference20
 Warning--empty journal in Reference7
 Warning--empty booktitle in Reference32
+Warning--empty year in Reference36
 Warning--empty author in Reference16
 Warning--empty journal in Reference16
 Warning--empty year in Reference16
@@ -35,7 +36,6 @@ Warning--empty author in Reference34
 Warning--empty booktitle in Reference34
 Warning--empty year in Reference34
 Warning--empty year in Reference35
-Warning--empty year in Reference36
 You've used 35 entries,
             2481 wiz_defined-function locations,
             762 strings with 10616 characters,

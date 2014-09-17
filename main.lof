@@ -2,30 +2,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Out-of-Band pattern VMI applications}}{15}{figure.caption.29}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Out-of-Band pattern VMI applications}}{16}{figure.caption.29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces HP Workstation static network configuration}}{17}{figure.caption.33}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Firefox proxy parameter}}{18}{figure.caption.34}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces KVM Virtualization Architecture in Linux}}{19}{figure.caption.37}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Relationship between virsh, virt-manager and libvirt}}{21}{figure.caption.44}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces User networking mode topology}}{22}{figure.caption.47}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Virtual network on NAT mode}}{23}{figure.caption.50}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Output of kvm-ok command}}{24}{figure.caption.52}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Step 1-Create a new VM with name win7\_64bit}}{26}{figure.caption.54}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Step 2-Choose win7 ISO file}}{26}{figure.caption.55}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Step 3-Create a virtual disk of 20G}}{27}{figure.caption.56}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Step 4-Indicate virtual disk location for guest installation}}{27}{figure.caption.57}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Step 5-Guest installation configuration resume}}{28}{figure.caption.58}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Guest machine ping host machine}}{29}{figure.caption.59}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Guest as a qemu process in host machine}}{29}{figure.caption.60}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces HP Workstation static network configuration}}{18}{figure.caption.33}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Firefox proxy parameter}}{19}{figure.caption.34}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces KVM Virtualization Architecture in Linux}}{20}{figure.caption.37}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Relationship between virsh, virt-manager and libvirt}}{22}{figure.caption.44}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces User networking mode topology}}{23}{figure.caption.47}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Virtual network on NAT mode}}{24}{figure.caption.50}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Output of kvm-ok command}}{25}{figure.caption.52}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Step 1-Create a new VM with name win7\_64bit}}{27}{figure.caption.54}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Step 2-Choose win7 ISO file}}{27}{figure.caption.55}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Step 3-Create a virtual disk of 20G}}{28}{figure.caption.56}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Step 4-Indicate virtual disk location for guest installation}}{28}{figure.caption.57}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Step 5-Guest installation configuration resume}}{29}{figure.caption.58}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Guest machine ping host machine}}{30}{figure.caption.59}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Guest as a qemu process in host machine}}{30}{figure.caption.60}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Truncated output of Nitro for a Win7 64bit VM}}{32}{figure.caption.64}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Truncated output of Nitro for a Win7 64bit VM}}{33}{figure.caption.64}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Comparison of VMI and FMA}}{37}{figure.caption.69}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Output of ./configure for LibVMI}}{40}{figure.caption.71}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Comparison of VMI and FMA}}{38}{figure.caption.69}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Output of ./configure for LibVMI}}{41}{figure.caption.71}
 \contentsline {figure}{\numberline {7.3}{\ignorespaces Import Pyvmi in Python interactive Shell}}{42}{figure.caption.72}
 \contentsline {figure}{\numberline {7.4}{\ignorespaces Windows Core Plugin List}}{45}{figure.caption.77}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Windows GUI and Malware Plugins List}}{45}{figure.caption.78}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Windows GUI and Malware Plugins List}}{46}{figure.caption.78}
 \contentsline {figure}{\numberline {7.6}{\ignorespaces Linux Memory Forensic Plugin}}{46}{figure.caption.79}
 \contentsline {figure}{\numberline {7.7}{\ignorespaces Volatility netscan(for windows) plugin's output}}{47}{figure.caption.80}
 \contentsline {figure}{\numberline {7.8}{\ignorespaces Supported Profile List in Our KVM Platform}}{48}{figure.caption.82}

@@ -161,33 +161,38 @@ Lionel Litty and David Lie.
 \newblock In \emph{In Proceedings of the Workshop on Architectural and System
   Support for Improving Software Dependability (ASID}, pages 6--11, 2006.
 
-\bibitem[Ref({\natexlab{c}})]{Reference16}
+\bibitem[Ref({\natexlab{c}})]{Reference36}
+Volatility, {\natexlab{c}}.
+\newblock URL
+  \url{https://code.google.com/p/volatility/wiki/LinuxCommandReference23#linux_vma_cache}.
+
+\bibitem[Ref({\natexlab{d}})]{Reference16}
 Insight-vmi.
-\newblock {\natexlab{c}}.
+\newblock {\natexlab{d}}.
 \newblock URL \url{https://code.google.com/p/insight-vmi/}.
 
-\bibitem[Ref({\natexlab{d}})]{Reference21}
-Ebtables community developers, {\natexlab{d}}.
+\bibitem[Ref({\natexlab{e}})]{Reference21}
+Ebtables community developers, {\natexlab{e}}.
 \newblock URL \url{http://ebtables.sourceforge.net/}.
 
-\bibitem[Ref({\natexlab{e}})]{Reference23}
+\bibitem[Ref({\natexlab{f}})]{Reference23}
 Libvirt community developers.
-\newblock {\natexlab{e}}.
+\newblock {\natexlab{f}}.
 \newblock URL \url{http://libvirt.org/goals.html}.
 
-\bibitem[Ref({\natexlab{f}})]{Reference25}
+\bibitem[Ref({\natexlab{g}})]{Reference25}
 Libvirt wikipedia.
-\newblock {\natexlab{f}}.
+\newblock {\natexlab{g}}.
 \newblock URL \url{http://en.wikipedia.org/wiki/Libvirt}.
 
-\bibitem[Ref({\natexlab{g}})]{Reference24}
+\bibitem[Ref({\natexlab{h}})]{Reference24}
 Qemu networking.
-\newblock {\natexlab{g}}.
+\newblock {\natexlab{h}}.
 \newblock URL \url{http://wiki.qemu.org/Documentation/Networking}.
 
-\bibitem[Ref({\natexlab{h}})]{Reference19}
+\bibitem[Ref({\natexlab{i}})]{Reference19}
 Virtual networking.
-\newblock {\natexlab{h}}.
+\newblock {\natexlab{i}}.
 \newblock URL
   \url{https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Virtualization_Administration_Guide/chap-Virtualization_Administration_Guide-Virtual_Networking.html}.
 
@@ -200,26 +205,21 @@ Jonas Pfoh, Christian Schneider, and Claudia Eckert.
   pages 166--175, Venice, Italy, 2010. IEEE Computer Society.
 \newblock URL \url{http://www.sec.in.tum.de/assets/Uploads/securware2010.pdf}.
 
-\bibitem[Ref({\natexlab{i}})]{Reference33}
+\bibitem[Ref({\natexlab{j}})]{Reference33}
 Leveraging forensic tools for virtual machine introspectionm.
-\newblock {\natexlab{i}}.
+\newblock {\natexlab{j}}.
 \newblock URL
   \url{https://smartech.gatech.edu/bitstream/handle/1853/38424/GT-CS-11-05.pdf}.
 \newblock Tech.Report.
 
-\bibitem[Ref({\natexlab{j}})]{Reference34}
+\bibitem[Ref({\natexlab{k}})]{Reference34}
 Memory analysis.
-\newblock {\natexlab{j}}.
+\newblock {\natexlab{k}}.
 \newblock URL \url{http://www.forensicswiki.org/wiki/Memory_analysis}.
 
-\bibitem[Ref({\natexlab{k}})]{Reference35}
-Linuxmemoryforensics, {\natexlab{k}}.
+\bibitem[Ref({\natexlab{l}})]{Reference35}
+Linuxmemoryforensics, {\natexlab{l}}.
 \newblock URL
   \url{https://code.google.com/p/volatility/wiki/LinuxMemoryForensics}.
-
-\bibitem[Ref({\natexlab{l}})]{Reference36}
-Volatility, {\natexlab{l}}.
-\newblock URL
-  \url{https://code.google.com/p/volatility/wiki/LinuxCommandReference23#linux_vma_cache}.
 
 \end{thebibliography}
