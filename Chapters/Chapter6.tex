@@ -97,4 +97,18 @@ knowledge is somewhat indispensable. We suggest that:
     \item Derivative is suitable to be used as the last defense line for security purpose
 \end{itemize}
 
+\section{Potentialities of CR3 in VMI}
+By reading and analyze carefully those VMI applications leveraging CR3 register, we could get some conclusions:
+Firstly, the functionality of CR3 register, according to Intel’s specification \cite{BookIntelManuel} and Pfoh’s 
+exploiting \cite{Reference17}, is just used to hold the address of the top-level page directory for the currently 
+executing process. This value could be used to uniquely represent a process. No others special functionality.
+Secondly, the prior work about deriving or inferring guest information from CR3 register is all about countering 
+security threats such as identifying hidden processes and stopping them in guest, while our study about CR3 register
+is to investigate if CR3 register could provide some information about monitoring network traffic. Accordingly, 
+by nature, countering security threats needs less information at the level of process than monitoring task. For 
+countering a malicious process, we are allowed to identify the process address space and delete this allocated 
+address space to protect guest and it is not necessary to know the PID or process name or application name related 
+to the killed dangerous process. However, in the context of monitoring task, for example, monitoring network traffic
+on the basis of process, in my view, it needs much more detailed information.
+
 

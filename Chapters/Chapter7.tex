@@ -11,15 +11,15 @@
 %----------------------------------------------------------------------------------------
 
 \section{INTRODCTION}
-Recall that the objective of this internship derives from a predication made by Pfoh in his doctoral thesis in chapter 6 Derivative Method \cite{Reference7}: 
-These methods (Derivative method) allow one to track network connections on a per-process basis in a completely guest operating system agnostic manner.
+Recall that the objective of this internship derives from a predication made by Pfoh in his doctoral thesis in chapter 6 
+Derivative Method \cite{Reference7}: These methods (Derivative method) allow one to track network connections on a per-process
+basis in a completely guest operating system agnostic manner.
 
 Frankly, a Virtual Machine Introspection application VMWall \cite{Reference2} has implemented almost the similar functionality. 
-However, VMWall’s implementation is based on delivery pattern, also known as out-of-band manner, 
-thus it has a narrow set of operating system support and requires some preliminary configuration files to work. 
-All above characteristics hinder wide application of this kind of VMI application. Therefore, what Pfoh has declared actually 
-attract my attention is the capacity presented by his derivative method to achieve the same functionality but in a 
-“completely guest operating system agnostic manner”.
+However, VMWall’s implementation is based on delivery pattern, thus it has a narrow set of operating system support and requires
+some preliminary configuration files to work. All above characteristics hinder wide application of this kind of VMI application.
+Therefore, what Pfoh has declared actually attract my attention is the capacity presented by his derivative method to achieve
+the same functionality but in a “completely guest operating system agnostic manner”.
 
 To implement his claim, this task could be naturally treated from two plans: network plan and process plan. 
 With regard to network plan, Pfoh gives the theoretical groundwork about his predication: All guests I/O activities, 
