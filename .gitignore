@@ -25,4 +25,6 @@
 *.mtc1
 *.out
 *.synctex.gz
-
+*.tex.backup
+*.DS_Store
+*.bib.backup
