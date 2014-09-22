@@ -6,14 +6,21 @@
 
 \lhead{Chapter 8. \emph{VIRTUOSO INSTALLATION AND MANIPULATION}} % Change X to a consecutive number; this is for the header on each page - perhaps a shortened title
 
-
 Although forensic memory analysis community has developed plenty of utilities which could be leveraged for VM introspection, 
 VMI applications based on these utilities such as volatility plugin, are still not able to be applied conveniently in for example 
-operator provided cloud environment. The reason is obvious: the approach strongly depends on the stability of target VM kernel. 
-Once update or patch is applied to monitored guest’s kernel, these VMI applications may need to be adapted. 
-To remedy this mentioned problem, some VMI applications depending on reutilizing binary code, such as VIRTUOSO, EXTERIOR, HyperShell,etc.,
-are presented. As far as I know, VIRTUOSO is the unique open source tool in this domain. Therefore, even though HyperShell has more 
-functionalities, we still have to  explore VIRTUOSO to hava a more depper knowledge about reutilization pattern.
+operator provided cloud environment. The reason is obvious: the approach strongly depends on the stability of target VM kernel and need much
+more humain effort. Once update or patch is applied to monitored guest’s kernel, these VMI applications may need to be adapted. To remedy this 
+mentioned problem, we need to think out of box. An interesting and fundamental insight is: it is typically trivival to write programs inside 
+the guest OS that compute the desired information by querying the built-in APSs. Logcially and naturally, people think to how to reutulize 
+the existing API(binary code) in the guest toautomate the generation of VMI tools. Not only the binary code, the execution contex under some
+circumstance also could be leveraged to do VMI, we call this philosophy as "Reutilization Pattern". 
+
+Nowdays there exist some famous and attractive research efforts based on reutilizatin pattern, such as VIRTUOSO\cite{Reference27}, 
+EXTERIOR\cite{Reference29}, HyperShell\cite{Reference31},etc.. Among all these VMI techonologies, HyperShell is the most attractive: it provides
+a hypervisor layer guest OS shell that has all of the functionalities of a traditional shell, but offers better automation, uniformity and 
+centralized management. However, its source code is not accessible, but I still recommand to give it some attention.
+Because VIRTUOSO is the unique open source tool in this domain, therefore, we still have to  explore VIRTUOSO to hava a more depper
+knowledge about reutilization pattern.
 
 
 %----------------------------------------------------------------------------------------
@@ -22,13 +29,13 @@ functionalities, we still have to  explore VIRTUOSO to hava a more depper knowle
 
 \section{Installation of VIRTUOSO}
 
-A rather detailed and helpful how-to wiki about installation of VIRTUOSO is available in the link: 
-https://code.google.com/p/virtuoso/wiki/Installation. Since that this wiki has not seen any update since 2012, 
+A rather detailed and helpful how-to wiki about installation of VIRTUOSO is available in the link 
+\url{https://code.google.com/p/virtuoso/wiki/Installation}. Since that this wiki has not seen any update since 2012, 
 we were still stuck by some unexpected problems.  As a meaningful complement to the initial how-to wiki, this tutorial aims to record 
 all crossed problems and its solution in the road of VIRTUOSO exploration.
 
-To install VIRTUOSO, 64-bit Linux system (Debian/Ubuntu preferred) and Python 2.6 or later are required. Its source code is 
-http://code.google.com/p/virtuoso/downloads/list. After obtaining the VIRTUOSO source code, it consists of two steps to install VIRTUOSO:
+To install VIRTUOSO, 64-bit Linux system (Debian/Ubuntu preferred) and Python 2.6 or later are required. Its source code is available at 
+\url{http://code.google.com/p/virtuoso/downloads/list}. After obtaining the VIRTUOSO source code, it consists of two steps to install VIRTUOSO:
 install all dependencies for VIRTUOSO (gcc 3.4, QEMU 0.9.1, libdasm), compile and install iFerret.
 
 %-----------------------------------
