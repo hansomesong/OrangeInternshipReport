@@ -38,15 +38,15 @@ respective advantages of these two approaches.
 \subsection{Derivative Pattern \& Delivery Pattern \& Reutilization Pattern}
 
 The taxonomy of VMI application could be talked in another perspective. On the basis of the manner by which semantic information is gathered by 
-hypervisor, all VMI applications could be implemented in three patterns: in-band pattern, out-of-band pattern and derivative pattern \cite{Reference5}.
+hypervisor, all VMI applications could be implemented in three patterns: in-band pattern, delivery pattern and derivative pattern \cite{Reference5}.
 In-band pattern describes the case where an internal agent in VM gather and delivery information to hypervisor. Strictly speaking, In-band 
-pattern is not a real VMI method, thus it is not an investigation focus. Out-of-band pattern is the most commonly used method to bridge the 
+pattern is not a real VMI method, thus it is not an investigation focus. Delivery pattern is the most commonly used method to bridge the 
 semantic gap. Its main idea lies in that hypervisor obtains in advance some semantic knowledge, such as System symbol file for Linux guest, 
-to extract subsequently more running states of VM. VMI in out-of-band is the most active research domain compared to the other two patterns. 
+to extract subsequently more running states of VM. VMI in delivery is the most active research domain compared to the other two patterns. 
 The last pattern is derivative pattern whose principle is to extract and infer running states information about guest from semantic knowledge 
-of hardware architecture. It seems that this pattern is ideal for implementing VMI applications. However, derivative pattern could be used in 
+of hardware architecture. It seems that this pattern is ideal for implementing VMI applications. However, derivative pattern could be used by nature in 
 limited cases. To what extent this limitation exists is further explored in chapter 6 by Pfoh \cite{Reference7}. In addition, the investigation 
-about derivative pattern is much fewer than that of out-of-band. Nitro, Antfarm and Lycosid \cite{Reference4, Reference8, Reference9} are three 
+about derivative pattern is much fewer than delivery pattern. Nitro, Antfarm and Lycosid \cite{Reference4, Reference8, Reference9} are three 
 typical VMI applications in this domain. In terms of reutlization pattern, this is a term I personally add to cover those VMI applications
 whose principal philosophy is reutilization of binary code or execution context \cite{Reference7, Reference28}. Compared with other 
 patterns (delivery or derivative pattern), it is a big step in automating of introspection tool generation, because it's much more suited

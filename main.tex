@@ -125,18 +125,22 @@
 \textbf{FMA} & \textbf{F}orensic\textbf{M}emory \textbf{A}nalysis \\
 \textbf{SVM} & \textbf{S}ecure \textbf{V}irtual \textbf{M}achine \\
 \textbf{GVM} & \textbf{G}uest  \textbf{V}irtual \textbf{M}achine \\
-\textbf{VNI} & \textbf{V}irtual\textbf{N}etwork \textbf{I}nterface \\
-\textbf{IDS} & \textbf{I}ntrusion\textbf{D}etection \textbf{S}ystem \\
-\textbf{QMP} & \textbf{Q}emu\textbf{M}achine \textbf{P}rotocol \\
-\textbf{GPA} & \textbf{G}uest\textbf{P}ysical \textbf{A}ddress \\
-\textbf{DKMS} & \textbf{D}ynamic\textbf{K}ernel \textbf{M}odule \textbf{S}upport \\
+\textbf{VNI} & \textbf{V}irtual \textbf{N}etwork \textbf{I}nterface \\
+\textbf{IDS} & \textbf{I}ntrusion \textbf{D}etection \textbf{S}ystem \\
+\textbf{QMP} & \textbf{Q}emu \textbf{M}achine \textbf{P}rotocol \\
+\textbf{GPA} & \textbf{G}uest \textbf{P}ysical \textbf{A}ddress \\
+\textbf{DKMS} & \textbf{D}ynamic \textbf{K}ernel \textbf{M}odule \textbf{S}upport \\
 }
 
 %----------------------------------------------------------------------------------------
 % SYMBOLS
 %----------------------------------------------------------------------------------------
 \clearpage % Start a new page
+
+\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+
 \lhead{\emph{Virtual Machine Manifest}} % Set the left side page header to "Abbreviations"
+
 \begin{center}
     \begin{tabular}{| p{2cm} |p{3cm} | p{2cm} | p{2cm} |p{2cm} |p{2cm}|}
     \hline
@@ -144,17 +148,24 @@
     \hline
     Win7\_64bit & $\sim$/stage/Win7-64bit.img & Win7 SP1 64bit & Nitro, Volatility-LibVMI & win7\_64bit & None\\ 
     \hline
-    vm1 & $\sim$/stage/Ubuntu14-02-32.img & Ubuntu14.04 32bit &Volatility-LibVMI & vm1 & 123456\\
+    vm1 & $\sim$/stage/Ubuntu14-02-32.img & Ubuntu14.04 32bit &Volatility-LibVMI & vm1/root & 123456\\
     \hline
-    vm2 & $\sim$/stage/vm2.img & Ubuntu10.04 32bit &Volatility-LibVMI & vm2 & 123456\\
+    vm2 & $\sim$/stage/vm2.img & Ubuntu10.04 32bit &Volatility-LibVMI & vm2/root & 123456\\
     \hline
-    vm3 & $\sim$/stage/vm3.img & Ubuntu12.04 32bit &Volatility-LibVMI & vm3 & 123456\\
+    vm3 & $\sim$/stage/vm3.img & Ubuntu12.04 32bit &Volatility-LibVMI & vm3/root & 123456\\
     \hline
     Win7\_32bit & $\sim$/stage/Win7-32bit.img & Win7 SP1 32bit & Volatility-LibVMI & win7\_32bit & None\\
     \hline
     Haiku & $\sim$/virtuoso/haiku-r1alpha2-anyboot.qcow2 & Haiku R1 alphaA2 & VIRTUOSO & None & None\\ 
     \hline
+
+
     \end{tabular}
+    \begin{itemize}
+     \item(-) For Windows OS, we have not set a password for any user including "administrator"
+     \item(-) For Ubuntu OS, we have not created password for "root". To be privileged, we rely on "sudo" command with normal user's password
+     \item(-) For Haiku OS, we use an VM image provided by user and load directly its snapshot, thus we do not need user and password 
+    \end{itemize}
 \end{center}
 
 
