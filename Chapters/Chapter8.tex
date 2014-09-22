@@ -12,7 +12,7 @@ operator provided cloud environment. The reason is obvious: the approach strongl
 more humain effort. Once update or patch is applied to monitored guest’s kernel, these VMI applications may need to be adapted. To remedy this 
 mentioned problem, we need to think out of box. An interesting and fundamental insight is: it is typically trivival to write programs inside 
 the guest OS that compute the desired information by querying the built-in APSs. Logcially and naturally, people think to how to reutulize 
-the existing API(binary code) in the guest toautomate the generation of VMI tools. Not only the binary code, the execution contex under some
+the existing API(binary code) in the guest to automate the generation of VMI tools. Not only the binary code, the execution contex under some
 circumstance also could be leveraged to do VMI, we call this philosophy as "Reutilization Pattern". 
 
 Nowdays there exist some famous and attractive research efforts based on reutilizatin pattern, such as VIRTUOSO\cite{Reference27}, 
@@ -22,10 +22,38 @@ centralized management. However, its source code is not accessible, but I still 
 Because VIRTUOSO is the unique open source tool in this domain, therefore, we still have to  explore VIRTUOSO to hava a more depper
 knowledge about reutilization pattern.
 
+\section{Implementation of VIRTUOSO}
+To illustrate our disscusion about VIRTUOSO(installation, execution and assesse), it is better to have an general introduction about
+its design and implementation. As we talked before, VIRTUOSO's objective is how to translate a guest-OS program into a form that could run
+outside of its native environment. To achevie this, VIRTUOSO relies on dynamic analysis to capture all the codes executed while the target
+program is runing. Meanwhile, VIRTUOSO leverages dynamic slicing technique to identify the exact set of instructions required to compute the
+introspection. In addition, due to the dynamic analysis nature of VIRTUOSO, it is supposed to have a trace merging algorithm to merge the
+gathered traces from multiple time execution. In one word, VIRUOSO's innovation lies in three key techniques : dynamic analysis, dynamic 
+slicing and trace emerging.
 
-%----------------------------------------------------------------------------------------
-%	SECTION 1
-%----------------------------------------------------------------------------------------
+Generally speaking, VIRTUOSO creates introspection tools for an operating system by converting in-guest programs, which query guest OS's
+public APIs, into hypervisor-level programs that reproduce the almost same result with in-guest utilises. This process could be finished
+in three phases: training phase, analysis phase and runtime phase.
+
+As shown in Figure \ref{fig:VIRTUOSO's Component and Architecture}, training phase is conducted by "Trace Logger" component in a trusted VM , 
+which has the same OS and kernel version with clients' OS. Trace logger is acutally an modified version of QEMU 0.9.1 in which logging all instructions functionality
+is added. the training programs running in trusted guest are in charge of to signal the Trace Logger and inform the latter of the beginning
+and end of the introspection operation. Thus, we could infer that writing a correct training program is not trivial.
+
+The gathered traces in training phase contain the instructions of the whole system, namely, in addtion to computing the introspection quantity
+, the traces also include unrelated events such as interrupt handling. we nened to excise those extraneous parts of the traces. This is the
+objective of component "Trace Analyser". This anaylsis 
+
+When a certain trainning program is well invoked, we entre into the 
+anaylsis phase. Normally, a training program should be executed multiple time to cover all possible execution path to the most degree.
+
+  
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=14cm, height= 7cm ]{Figures/FigureVirtuoso.png}
+	\caption{VIRTUOSO's Component and Architecture \cite{Reference27}}
+	\label{fig:VIRTUOSO's Component and Architecture}
+\end{figure}
 
 \section{Installation of VIRTUOSO}
 
@@ -88,7 +116,7 @@ beginning of this file: \#include <signal.h>. Repeat 'make install' command, nor
 should be finished with success. Now you could give a try to VIRTUOSO following another wiki in its official site.
 
 \subsection{Problem 3: The abort of execution of example VM image}
-Issuing the command line:
+We follow this link \url{https://code.google.com/p/virtuoso/wiki/Walkthrough} to have a try with VIRTUOSO. Issuing the command line:
 \shellcmd{install/bin/qemu -m 256 -hda haiku-r1alpha2-anyboot.qcow2 -usbdevice tablet\\ -loadvm introprog -monitor stdio -k en-us -iferret\_log 
 walkthrough}
 However, new error has occurred:
@@ -101,7 +129,7 @@ However, new error has occurred:
 \end{figure}
 
 This error is not evident as others obstacles we encountered before and nothing could be found online. After one week’s effort, 
-I finally got some clues about this problem to read another wiki 'limitation' at https://code.google.com/p/virtuoso/wiki/Limitations,
+I finally got some clues about this problem to read another wiki 'limitation' at \url{https://code.google.com/p/virtuoso/wiki/Limitations},
 This is caused by the fact that:
 
 \textcolor{blue}{
