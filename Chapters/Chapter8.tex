@@ -23,7 +23,7 @@ Because VIRTUOSO is the unique open source tool in this domain, therefore, we st
 knowledge about reutilization pattern.
 
 \section{Implementation of VIRTUOSO}
-To illustrate our disscusion about VIRTUOSO(installation, execution and assesse), it is better to have an general introduction about
+To illustrate our disscusion about VIRTUOSO(installation, execution and assesse), it is better to have a general introduction about
 its design and implementation. As we talked before, VIRTUOSO's objective is how to translate a guest-OS program into a form that could run
 outside of its native environment. To achevie this, VIRTUOSO relies on dynamic analysis to capture all the codes executed while the target
 program is runing. Meanwhile, VIRTUOSO leverages dynamic slicing technique to identify the exact set of instructions required to compute the
@@ -38,15 +38,17 @@ in three phases: training phase, analysis phase and runtime phase.
 As shown in Figure \ref{fig:VIRTUOSO's Component and Architecture}, training phase is conducted by "Trace Logger" component in a trusted VM , 
 which has the same OS and kernel version with clients' OS. Trace logger is acutally an modified version of QEMU 0.9.1 in which logging all instructions functionality
 is added. the training programs running in trusted guest are in charge of to signal the Trace Logger and inform the latter of the beginning
-and end of the introspection operation. Thus, we could infer that writing a correct training program is not trivial.
+and end of the introspection operation. Thus, we could infer that writing a correct training program is not trivival.
 
 The gathered traces in training phase contain the instructions of the whole system, namely, in addtion to computing the introspection quantity
 , the traces also include unrelated events such as interrupt handling. we nened to excise those extraneous parts of the traces. This is the
-objective of component "Trace Analyser". This anaylsis 
+objective of component "Trace Analyser". This anaylsis depends on dynamic data slice techinique applied on each trace. Finally, we merge the slice
+results accross basic blocks and traces, producing a unified program that could be translated into an out-of-guest intro routine. In pracice, this
+component is written in Python. 
 
-When a certain trainning program is well invoked, we entre into the 
-anaylsis phase. Normally, a training program should be executed multiple time to cover all possible execution path to the most degree.
-
+The translated code could not be executed directly, il must be called with an appropriate runtime environment in which to execute. Currently, the
+generated intropsection utilities are in form of Volatility plugin. Therefore, the runtime environment in current implementation of VIRTUOSO is 
+Volatility.
   
 \begin{figure}[htbp]
 	\centering
