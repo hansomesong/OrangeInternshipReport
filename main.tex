@@ -132,8 +132,48 @@
 \textbf{DKMS} & \textbf{D}ynamic \textbf{K}ernel \textbf{M}odule \textbf{S}upport \\
 }
 
+
+
 %----------------------------------------------------------------------------------------
-% SYMBOLS
+% Nitro, LibVMI&Volatility, VIRTUOSO Path and script 
+%----------------------------------------------------------------------------------------
+\clearpage % Start a new page
+
+\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+
+\lhead{\emph{VMI Application Basic Information Manifest}} % Set the left side page header to "Abbreviations"
+
+\begin{center}
+    \begin{tabular}{| l |  l | l|}
+    \hline
+    VMI Techinique & Working Dirctory & Automatic Script  \\ 
+    \hline
+    Nitro & $\sim$/nitro  & load\_mods, win7start, NitroStart\\ 
+    \hline
+    LibVMI,Volatility & $\sim$/libvmi & demo.py\\ 
+    \hline
+    VIRTUOSO & $\sim$/m\_virtuoso & newslice.py, volatility.py \\
+    \hline
+    \end{tabular}
+    \begin{itemize}
+     \item To simply the utilization of Nitro, three shell scripts all in directory /home/cloud are created
+     : load\_mods, win7start, NitroStart.
+     load\_mods under /home/cloud/ directory is used to replace initial KVM module by that Nitro. 
+     win7start is used to start a Win7 OS VM. 
+     NitroStart aimes to attaching Nitro with target VM for monitoring
+     \item For LibVMI\&Volatility, to group step "the mount VM's memory as file" and "invoke interested Volatility's" plugin
+     Windows OS into a single Python script, we create a Python script: demo.py, in /home/cloud/libvmi/script. For its usage,
+     change into the directory mentioned above, issue "sudo python demo.py -h".
+     \item For VIRTUOSO, should change into /home/cloud/m\_virtuoso/virtuoso\_code/iferret-logging-new to start target VM.
+     The collected traces will be placed in the same direcory. Then change into its sibling directory "dynslicer" to execute
+     script "newslice.py". The generated plugin will be under /home/cloud/m\_virtuoso/virtuoso\_code/ \\
+     iferret-logging-new. Finally
+     change into Volatility-1.3\_Beta to run volatility.py
+     \end{itemize}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+% VM Manifest
 %----------------------------------------------------------------------------------------
 \clearpage % Start a new page
 

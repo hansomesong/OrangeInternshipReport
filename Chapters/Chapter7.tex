@@ -415,6 +415,9 @@ Still take our Windows guest “win7\_32bit” as example. After above invocatio
 Different with pyvmi address space plugin, the simple Python script works well and poses none problem.
 
 \section{Experimentation Result}
+To simplify the usage of Volatily, we have created a seperated Python script "demo.py" in /home/cloud/libvmi/script. For its usage,
+we could issue command under the directory in question:
+\shellcmd{sudo python demo.py -h}
 With LibVMI+pyvmifs.py+volatility, we could run all interesting plugins for our KVM Windows/Linux virtual machines. 
 Figure shows the resume of execution of under Windows 7 x86/64 and Ubuntu 10.04 x86.
 
